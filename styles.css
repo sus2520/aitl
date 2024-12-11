@@ -1,0 +1,328 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.9;
+    color: #333;
+    background: #1b2336; /* Matches dark gradient from the logo */
+}
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #1e5eb2, #c58a1e); /* Blue to orange gradient */
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img {
+    height: 60px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: linear-gradient(to bottom, #4e5151, #072f60);
+    color: #fff;
+    padding: 50px 0;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    color: #ffa500; /* Orange highlight */
+}
+.hero .btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    color: #fff;
+    background: #043046;
+    text-decoration: #4eb4c0;
+    border-radius: 9px;
+    transition: background 0.3s ease;
+}
+.hero .btn:hover {
+    background: #ffa500;
+}
+
+/* Section Styles */
+section {
+    padding: 30px 0;
+    color: #fff;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffa500;
+}
+.about-logo {
+    display: block;
+    margin: 30px auto; /* Increased margin for better spacing */
+    height: 210px; /* 40% bigger than the previous 150px */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Smooth, rounded corners */
+    border: 5px solid rgba(0, 93, 224, 0.8); /* Vibrant blue border */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Deeper shadow for emphasis */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease; /* Smooth animation */
+}
+
+.about-logo:hover {
+    transform: scale(1.2) rotate(3deg); /* Slight zoom and tilt on hover */
+    box-shadow: 0 12px 24px rgba(202, 140, 7, 0.6); /* More pronounced shadow on hover */
+    border: 5px solid rgba(255, 165, 0, 0.8); /* Change border color to orange on hover */
+}
+
+.about-section {
+    padding: 50px 20px;
+    background-color: #0b1726; /* Matches your overall theme */
+    color: #fff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    color: #ffaf00; /* Highlighted header color */
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-logo-container {
+    text-align: center;
+}
+
+.about-logo {
+    width: 250px; /* Adjust logo size */
+    border-radius: 10px;
+    border: 5px solid #005de0; /* Blue border */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add depth */
+}
+
+.about-description {
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.about-description p {
+    margin-bottom: 15px;
+}
+
+.learn-more-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #39a3a3; /* Primary blue */
+    color: rgb(63, 58, 58);
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.learn-more-link:hover {
+    background-color: #ffaf00; /* Hover effect with orange */
+    color: #0b1726; /* Text color inversion */
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card {
+    flex: 1;
+    background: #333;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card i {
+    font-size: 36px;
+    color: #ffa500;
+}
+.card h3 {
+    margin: 10px 0;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form input, form textarea {
+    background: #222;
+    color: #fff;
+}
+form button {
+    background: #005de0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+form button:hover {
+    background: #ffa500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+#portfolio .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center the grid items */
+}
+
+#portfolio .portfolio-item {
+    background: #333; /* Dark background for contrast */
+    padding: 10px; /* Padding inside the item box */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#portfolio .portfolio-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#portfolio .portfolio-item img {
+    width: 100%; /* Fill the container width */
+    height: 270px; /* 30% increase from 208px */
+    object-fit: cover; /* Crop the image to fit the dimensions */
+    margin-bottom: 10px; /* Space below the image */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#portfolio .portfolio-item h3 {
+    margin: 10px 0 5px; /* Margin above and below the heading */
+    color: #4bd8c6; /* Blue text for headings */
+    font-size: 16px; /* Smaller font size for headings */
+}
+
+#portfolio .portfolio-item p {
+    font-size: 12px; /* Smaller font size for descriptions */
+    color: #ccc; /* Light gray text for descriptions */
+    margin: 0; /* Remove extra margin */
+}
+
+
+/* Floating Contact Sidebar */
+.contact-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    gap: 15px; /* Space between icons */
+}
+
+/* Contact Icon Styling */
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Icon size */
+    height: 50px;
+    background: radial-gradient(circle, #005de0 0%, #072f60 100%); /* Logo gradient colors */
+    border-radius: 50%; /* Circular shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    text-decoration: none; /* No underline */
+    border: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Icons Inside the Buttons */
+.contact-item.email::before {
+    content: "✉️";
+    font-size: 30px; /* Adjust icon size */
+    color: white;
+    position: absolute;
+}
+
+.contact-item.phone::before {
+    content: "📞";
+    font-size: 30px;
+    color: white;
+    position: absolute;
+}
+
+.contact-item.whatsapp::before {
+    content: "🟢";
+    font-size: 30px;
+    color: white;
+    position: absolute;
+}
+
+/* Hover Effects */
+.contact-item:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+    background: radial-gradient(circle, #26487b 0%, #bacde8 100%); /* Inverted gradient */
+}
+
+/* Remove All Text from Surrounding Elements */
+.contact-item::after,
+.contact-item span {
+    display: none; /* No extra text anywhere */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-item {
+        width: 40px; /* Smaller icons for mobile */
+        height: 40px;
+    }
+
+    .contact-item::before {
+        font-size: 20px; /* Adjust icon size */
+    }
+}

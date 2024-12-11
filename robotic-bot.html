@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotic Bot - Project Overview</title>
+    <style>
+        /* General container styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Heading styling with gradient */
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #dde3eb, #bd8f11);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #f1f0ec, #5cc0ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        p, ul {
+            color: #FFFFFF; /* Bright white text */
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        ul li:before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #FFA500;
+            font-size: 20px;
+        }
+
+        /* Image styling */
+        .portfolio-image {
+            max-width: 70%; /* Reduced size */
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Header and body background styling with gradient */
+        body {
+            background: linear-gradient(to bottom, #1e5eb2, #c58a1e); /* Blue to orange gradient */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: linear-gradient(to right, #1e5eb2, #c58a1e); /* Blue to orange gradient */
+            padding: 5px 0; /* Reduced padding for header */
+        }
+
+        header .logo img {
+            max-width: 120px; /* Adjusted size for logo */
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px; /* Reduced margin for nav items */
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 18px; /* Reduced font size for nav links */
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #FFA500;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #222;
+            color: #FFF; /* Bright white text for footer */
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #FFA500; /* Bright orange link */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p, ul {
+                font-size: 16px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="adaptai-logo.jpg" alt="Adapt AI Logo" />
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="roboticbot-overview">
+        <div class="container">
+            <h1>AI-Powered Robotic Bot System</h1>
+            <p>
+                Presenting Soft Designers' product <strong>“AI-Powered Robotic Bot”</strong> – Advanced AI solutions tailored to automate repetitive tasks with precision and efficiency.
+            </p>
+            <img src="robotic.png" alt="Robotic Bot System" class="portfolio-image">
+
+            <h2>Features of AI-Powered Robotic Bot System:</h2>
+            <ul>
+                <li>Task automation and optimization</li>
+                <li>Advanced object recognition</li>
+                <li>Real-time decision making</li>
+                <li>Seamless integration with hardware</li>
+                <li>Customizable workflows</li>
+                <li>24/7 operational capabilities</li>
+            </ul>
+
+            <h2>System Capabilities:</h2>
+            <ul>
+                <li>Data-driven automation insights</li>
+                <li>Integration with IoT and sensors</li>
+                <li>Scalable robotic solutions</li>
+                <li>Customizable robotic behaviors</li>
+            </ul>
+
+            <h2>Benefits of AI Technology:</h2>
+            <ul>
+                <li>1. Enhanced operational accuracy</li>
+                <li>2. Reduced manual errors</li>
+                <li>3. Cost-efficient task handling</li>
+                <li>4. Scalable automation solutions</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Adapt AI. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
