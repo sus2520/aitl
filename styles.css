@@ -281,26 +281,34 @@ footer {
 }
 
 /* Icons Inside the Buttons */
-.contact-item.email::before {
-    content: "✉️";
-    font-size: 30px; /* Adjust icon size */
-    color: white;
+.contact-item.email::before,
+.contact-item.phone::before,
+.contact-item.whatsapp::before {
+    display: inline-block;
+    width: 30px; /* Set consistent size */
+    height: 30px;
+    line-height: 30px; /* Center-align text-based icons */
+    font-size: 24px; /* Adjust font size for text-based icons */
     position: absolute;
+    left: 10px; /* Adjust horizontal alignment */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Correct vertical centering */
+}
+
+/* Individual Icon Content */
+.contact-item.email::before {
+    content: "✉️"; /* Email Icon */
 }
 
 .contact-item.phone::before {
-    content: "📞";
-    font-size: 30px;
-    color: white;
-    position: absolute;
+    content: "📞"; /* Phone Icon */
 }
 
 .contact-item.whatsapp::before {
-    content: "🟢";
-    font-size: 30px;
-    color: white;
-    position: absolute;
+    content: url('./whatsapp.png'); /* WhatsApp Icon */
+    object-fit: contain; /* Ensure image proportions */
 }
+
 
 /* Hover Effects */
 .contact-item:hover {
