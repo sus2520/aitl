@@ -11,7 +11,7 @@ body {
     background: #1b2336; /* Matches dark gradient from the logo */
 }
 .container {
-    width: 90%;
+    width: 1000%;
     margin: auto;
     max-width: 1200px;
 }
