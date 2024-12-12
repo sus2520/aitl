@@ -11,7 +11,7 @@ body {
     background: #1b2336; /* Matches dark gradient from the logo */
 }
 .container {
-    width: 1000%;
+    width: 100%;
     margin: auto;
     max-width: 1200px;
 }
@@ -214,9 +214,9 @@ footer {
 
 #portfolio .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-    gap: 20px; /* Space between items */
-    justify-content: center; /* Center the grid items */
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); /* Adjusted for smaller screens */
+    gap: 15px; /* Reduced spacing for mobile */
+    padding: 0 10px; /* Add padding for edge cases */
 }
 
 #portfolio .portfolio-item {
