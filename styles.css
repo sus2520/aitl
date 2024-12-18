@@ -305,7 +305,7 @@ footer {
 }
 
 .contact-item.whatsapp::before {
-    content: url('./whatsapp.png'); /* WhatsApp Icon */
+    content: url(''); /* WhatsApp Icon */
     object-fit: contain; /* Ensure image proportions */
 }
 
