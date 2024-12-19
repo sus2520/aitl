@@ -334,3 +334,136 @@ footer {
         font-size: 20px; /* Adjust icon size */
     }
 }
+/* Styling for the Clients and Contact Section layout */
+.clients-contact-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;  /* Ensures it wraps on smaller screens */
+}
+
+/* Styling for the Clients Section */
+.clients {
+    flex: 1;
+    background-color: #3b3636;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.clients h2 {
+    font-size: 1.5em;  /* Slightly larger font size for heading */
+    margin-bottom: 20px;
+}
+
+.clients ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.clients li {
+    font-size: 0.8em;  /* Further reduced font size for client names */
+    background: radial-gradient(circle, #005de0 0%, #053d41 100%); /* Logo gradient colors */
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: rgb(15, 10, 10); /* Text color */
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.clients li:hover {
+    transform: scale(1.1);  /* Slight enlarge on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);  /* Shadow on hover */
+}
+
+/* Radial gradient background for Partner Names */
+.partners-cloud span {
+    font-size: 0.6em;  /* Further reduced font size for partner names */
+    font-weight: bold;
+    color: #fff;  /* White text for contrast */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: radial-gradient(circle, #005de0 0%, #072f60 100%);  /* Gradient for partner names */
+    padding: 10px 20px;
+    border-radius: 50px;  /* Rounded pill shape */
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+/* Hover effect for partners */
+.partners-cloud span:hover {
+    color: #fff;
+    transform: scale(1.2);  /* Slight enlarge */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+}
+
+/* Word Cloud Effect - Random Sizes for Partners */
+.partners-cloud span:nth-child(odd) {
+    font-size: 1em;  /* Slightly larger for odd elements */
+}
+
+.partners-cloud span:nth-child(even) {
+    font-size: 0.8em;  /* Slightly smaller for even elements */
+}
+
+.partners-cloud span:nth-child(3n) {
+    font-size: 1.2em;  /* Even larger for every third partner */
+}
+
+/* Styling for Contact Section */
+.contact {
+    flex: 1;
+    background-color: #141111;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #1a1717;
+    border-radius: 8px;
+}
+
+.contact button {
+    padding: 12px;
+    font-size: 1.1em;
+    background-color: #005de0;
+    color: rgb(20, 10, 10);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #072f60;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .clients-contact-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clients,
+    .contact {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
