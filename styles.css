@@ -240,7 +240,7 @@ footer {
 }
 
 #portfolio .portfolio-item h3 {
-    margin: 10px 0 5px; /* Margin above and below the heading */
+    margin: 10px 0 8px; /* Margin above and below the heading */
     color: #4bd8c6; /* Blue text for headings */
     font-size: 16px; /* Smaller font size for headings */
 }
