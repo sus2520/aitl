@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Indicators - Product Overview</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* General container styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Heading styling with gradient */
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #dde3eb, #bd8f11);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #f1f0ec, #5cc0ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        p, ul {
+            color: #FFFFFF;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        ul li:before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #FFA500;
+            font-size: 20px;
+        }
+
+        /* Image styling */
+        .portfolio-image {
+            max-width: 70%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Header and body background styling with gradient */
+        body {
+            background: linear-gradient(to bottom, #1e5eb2, #c58a1e);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: linear-gradient(to right, #1e5eb2, #c58a1e);
+            padding: 10px 0;
+        }
+
+        header .logo img {
+            max-width: 150px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #FFA500;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #222;
+            color: #FFF;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #FFA500;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p, ul {
+                font-size: 16px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="adaptai-logo.jpg" alt="Adapt AI Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="trading-overview">
+        <div class="container">
+            <h1>Advanced Trading Indicators Suite</h1>
+            <p>
+                Unlock the full potential of your trading strategy with our <strong>“Advanced Trading Indicators Suite”</strong>. Designed for both beginner and professional traders, this product helps identify buy/sell opportunities, backtest strategies, and maximize profitability.
+            </p>
+            <img src="trade.png" alt="Trading Dashboard" class="portfolio-image">
+
+            <h2 id="features">Key Features:</h2>
+            <ul>
+                <li>Real-time buy/sell signals</li>
+                <li>Customizable indicators</li>
+                <li>Comprehensive backtesting tools</li>
+                <li>Automated trading alerts</li>
+                <li>Integration with major platforms (MetaTrader, TradingView, etc.)</li>
+                <li>Detailed analytics and reporting</li>
+            </ul>
+
+            <h2>Why Choose Our Software?</h2>
+            <ul>
+                <li>1. Easy-to-use interface</li>
+                <li>2. Improved decision-making</li>
+                <li>3. Minimized risks through strategy testing</li>
+                <li>4. 24/7 market monitoring</li>
+            </ul>
+
+            <h2>Supported Markets:</h2>
+            <ul>
+                <li>Stocks</li>
+                <li>Forex</li>
+                <li>Cryptocurrency</li>
+                <li>Commodities (Gold, Silver, Oil)</li>
+                <li>Indices (NASDAQ, S&P 500)</li>
+                <li>ETFs (Exchange-Traded Funds)</li>
+                <li>Futures Contracts</li>
+                <li>Options</li>
+                <li>Bonds</li>
+                <li>Emerging Markets</li>
+            </ul>            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Adapt AI. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
