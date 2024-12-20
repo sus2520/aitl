@@ -214,7 +214,7 @@ footer {
 
 #portfolio .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); /* Adjusted for smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); /* Adjusted for smaller screens */
     gap: 15px; /* Reduced spacing for mobile */
     padding: 0 10px; /* Add padding for edge cases */
 }
