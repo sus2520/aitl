@@ -179,31 +179,95 @@ section h2 {
 }
 /* Introduction Section */
 .intro-section {
-    background-color: #1b1c1c;
-    padding: 40px 0;
-    border-top: 5px solid #3e7cef;  /* A secure green accent */
-    margin-bottom: 40px;
+    position: relative;
+    background: linear-gradient(45deg, #3a3a3a, #1b1c1c); /* Soft gradient for a premium feel */
+    padding: 80px 30px;
+    border-top: 5px solid #47b9d5; /* Soft blue accent */
+    margin-bottom: 60px;
+    border-radius:25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+    overflow: hidden; /* Ensures clean border radius for the content */
 }
 
 .intro-section h2 {
     text-align: center;
-    font-size: 2rem;
-    color: #ad8516;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #f2a900; /* Vibrant gold */
+    margin-bottom: 35px;
+    font-family: 'Poppins', sans-serif; /* Elegant, modern font */
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for the title */
 }
 
 .intro-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.8;
     color: #dddada;
-    max-width: 900px;
-    margin: 0 auto 20px;
+    max-width: 950px;
+    margin: 0 auto 35px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out; /* Smooth color change on hover */
 }
 
 .intro-section p:last-child {
     margin-bottom: 0;
 }
+
+/* Hover effect for paragraphs with gradient text */
+.intro-section p:hover {
+    background: linear-gradient(45deg, #5bb2b5, #f2a900); /* Gradient color */
+    -webkit-background-clip: text; /* Clip the gradient to text */
+    color: transparent; /* Make the actual text transparent to show the gradient */
+    transform: translateY(-5px); /* Slight elevation on hover */
+}
+
+/* Add an animated gradient background to the section */
+.intro-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(131, 133, 133, 0.9), rgba(0, 0, 0, 0.8)); /* Dark overlay */
+    z-index: -1;
+    animation: gradientAnimation 8s ease-in-out infinite; /* Smooth gradient transition */
+    border-radius: 25px;
+}
+
+/* Keyframes for animated gradient */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, rgba(72, 73, 73, 0.9), rgba(0, 0, 0, 0.8));
+    }
+    50% {
+        background: linear-gradient(45deg, rgba(47, 118, 140, 0.9), rgba(19, 47, 54, 0.8));
+    }
+    100% {
+        background: linear-gradient(45deg, rgba(72, 73, 73, 0.9), rgba(0, 0, 0, 0.8));
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .intro-section {
+        padding: 60px 20px;
+    }
+
+    .intro-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .intro-section p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+}
+
 
 /* Contact Form */
 form {
