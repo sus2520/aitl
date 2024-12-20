@@ -177,6 +177,33 @@ section h2 {
 .card h3 {
     margin: 10px 0;
 }
+/* Introduction Section */
+.intro-section {
+    background-color: #1b1c1c;
+    padding: 40px 0;
+    border-top: 5px solid #3e7cef;  /* A secure green accent */
+    margin-bottom: 40px;
+}
+
+.intro-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ad8516;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #dddada;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.intro-section p:last-child {
+    margin-bottom: 0;
+}
 
 /* Contact Form */
 form {
