@@ -345,10 +345,10 @@ footer {
 /* Styling for the Clients Section */
 .clients {
     flex: 1;
-    background-color: #3b3636;
+    background-color: #080707;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(16, 16, 16, 0.1);
 }
 
 .clients h2 {
@@ -367,7 +367,7 @@ footer {
 
 .clients li {
     font-size: 0.8em;  /* Further reduced font size for client names */
-    background: radial-gradient(circle, #005de0 0%, #053d41 100%); /* Logo gradient colors */
+    background: radial-gradient(circle, #d4d3d1 0%, #185bac 100%); /* Logo gradient colors */
     padding: 10px 20px;
     border-radius: 50px;
     color: rgb(15, 10, 10); /* Text color */
@@ -420,7 +420,7 @@ footer {
 /* Styling for Contact Section */
 .contact {
     flex: 1;
-    background-color: #141111;
+    background-color: #0f0e0e;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -444,7 +444,7 @@ footer {
     padding: 12px;
     font-size: 1.1em;
     background-color: #005de0;
-    color: rgb(20, 10, 10);
+    color: rgb(197, 138, 21);
     border: none;
     border-radius: 8px;
     cursor: pointer;
