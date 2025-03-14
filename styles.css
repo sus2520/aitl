@@ -4,12 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.9;
     color: #333;
     background: #1b2336; /* Matches dark gradient from the logo */
 }
+
 .container {
     width: 100%;
     margin: auto;
@@ -24,20 +26,32 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
+
 header .logo img {
     height: 60px;
 }
+
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     gap: 20px;
 }
+
 header nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffa500;
 }
 
 /* Hero Section */
@@ -46,21 +60,30 @@ header nav ul li a {
     background: linear-gradient(to bottom, #4e5151, #072f60);
     color: #fff;
     padding: 50px 0;
+    margin-top: 80px;
 }
+
 .hero h2 {
     font-size: 2.5rem;
     color: #ffa500; /* Orange highlight */
 }
+
+.hero p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
 .hero .btn {
     display: inline-block;
     margin: 20px 0;
     padding: 10px 20px;
     color: #fff;
     background: #043046;
-    text-decoration: #4eb4c0;
+    text-decoration: none;
     border-radius: 9px;
     transition: background 0.3s ease;
 }
+
 .hero .btn:hover {
     background: #ffa500;
 }
@@ -70,39 +93,26 @@ section {
     padding: 30px 0;
     color: #fff;
 }
+
 section h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #ffa500;
 }
-.about-logo {
-    display: block;
-    margin: 30px auto; /* Increased margin for better spacing */
-    height: 210px; /* 40% bigger than the previous 150px */
-    width: auto; /* Maintain aspect ratio */
-    border-radius: 15px; /* Smooth, rounded corners */
-    border: 5px solid rgba(0, 93, 224, 0.8); /* Vibrant blue border */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Deeper shadow for emphasis */
-    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease; /* Smooth animation */
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 30px;
 }
 
-.about-logo:hover {
-    transform: scale(1.2) rotate(3deg); /* Slight zoom and tilt on hover */
-    box-shadow: 0 12px 24px rgba(202, 140, 7, 0.6); /* More pronounced shadow on hover */
-    border: 5px solid rgba(255, 165, 0, 0.8); /* Change border color to orange on hover */
-}
-
+/* About Us Section */
 .about-section {
     padding: 50px 20px;
     background-color: #0b1726; /* Matches your overall theme */
     color: #fff;
     text-align: center;
-}
-
-.about-section h2 {
-    font-size: 32px;
-    color: #ffaf00; /* Highlighted header color */
-    margin-bottom: 20px;
 }
 
 .about-content {
@@ -117,10 +127,20 @@ section h2 {
 }
 
 .about-logo {
-    width: 250px; /* Adjust logo size */
-    border-radius: 10px;
-    border: 5px solid #005de0; /* Blue border */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add depth */
+    display: block;
+    margin: 30px auto;
+    height: 210px;
+    width: auto;
+    border-radius: 15px;
+    border: 5px solid rgba(0, 93, 224, 0.8);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+}
+
+.about-logo:hover {
+    transform: scale(1.2) rotate(3deg);
+    box-shadow: 0 12px 24px rgba(202, 140, 7, 0.6);
+    border: 5px solid rgba(255, 165, 0, 0.8);
 }
 
 .about-description {
@@ -139,7 +159,7 @@ section h2 {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #39a3a3; /* Primary blue */
+    background-color: #39a3a3;
     color: rgb(63, 58, 58);
     border-radius: 25px;
     font-weight: bold;
@@ -148,15 +168,17 @@ section h2 {
 }
 
 .learn-more-link:hover {
-    background-color: #ffaf00; /* Hover effect with orange */
-    color: #0b1726; /* Text color inversion */
+    background-color: #ffaf00;
+    color: #0b1726;
 }
 
+/* Services Section */
 .service-cards {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
+
 .card {
     flex: 1;
     background: #333;
@@ -167,181 +189,78 @@ section h2 {
     color: #fff;
     transition: transform 0.3s ease;
 }
+
 .card:hover {
     transform: scale(1.05);
 }
+
 .card i {
     font-size: 36px;
     color: #ffa500;
 }
+
 .card h3 {
     margin: 10px 0;
-}
-/* Introduction Section */
-.intro-section {
-    position: relative;
-    background: linear-gradient(45deg, #3a3a3a, #1b1c1c); /* Soft gradient for a premium feel */
-    padding: 80px 30px;
-    border-top: 5px solid #47b9d5; /* Soft blue accent */
-    margin-bottom: 60px;
-    border-radius:25px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
-    overflow: hidden; /* Ensures clean border radius for the content */
+    color: #4bd8c6;
 }
 
-.intro-section h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    color: #f2a900; /* Vibrant gold */
-    margin-bottom: 35px;
-    font-family: 'Poppins', sans-serif; /* Elegant, modern font */
-    letter-spacing: 1.5px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for the title */
+/* Portfolio & Live Demos Sections */
+#portfolio, #live-demos {
+    padding: 50px 0;
 }
 
-.intro-section p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #dddada;
-    max-width: 950px;
-    margin: 0 auto 35px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    transition: color 0.3s ease-in-out; /* Smooth color change on hover */
-}
-
-.intro-section p:last-child {
-    margin-bottom: 0;
-}
-
-/* Hover effect for paragraphs with gradient text */
-.intro-section p:hover {
-    background: linear-gradient(45deg, #5bb2b5, #f2a900); /* Gradient color */
-    -webkit-background-clip: text; /* Clip the gradient to text */
-    color: transparent; /* Make the actual text transparent to show the gradient */
-    transform: translateY(-5px); /* Slight elevation on hover */
-}
-
-/* Add an animated gradient background to the section */
-.intro-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(131, 133, 133, 0.9), rgba(0, 0, 0, 0.8)); /* Dark overlay */
-    z-index: -1;
-    animation: gradientAnimation 8s ease-in-out infinite; /* Smooth gradient transition */
-    border-radius: 25px;
-}
-
-/* Keyframes for animated gradient */
-@keyframes gradientAnimation {
-    0% {
-        background: linear-gradient(45deg, rgba(72, 73, 73, 0.9), rgba(0, 0, 0, 0.8));
-    }
-    50% {
-        background: linear-gradient(45deg, rgba(47, 118, 140, 0.9), rgba(19, 47, 54, 0.8));
-    }
-    100% {
-        background: linear-gradient(45deg, rgba(72, 73, 73, 0.9), rgba(0, 0, 0, 0.8));
-    }
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .intro-section {
-        padding: 60px 20px;
-    }
-
-    .intro-section h2 {
-        font-size: 1.4rem;
-    }
-
-    .intro-section p {
-        font-size: 1.1rem;
-        margin-bottom: 20px;
-    }
-}
-
-
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-form input, form textarea, form button {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-form input, form textarea {
-    background: #222;
-    color: #fff;
-}
-form button {
-    background: #005de0;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-form button:hover {
-    background: #ffa500;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-}
-
-#portfolio .portfolio-grid {
+#portfolio .portfolio-grid, #live-demos .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); /* Adjusted for smaller screens */
-    gap: 15px; /* Reduced spacing for mobile */
-    padding: 0 10px; /* Add padding for edge cases */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
 }
 
-#portfolio .portfolio-item {
-    background: #333; /* Dark background for contrast */
-    padding: 10px; /* Padding inside the item box */
-    border-radius: 5px; /* Rounded corners */
+#portfolio .portfolio-item, #live-demos .portfolio-item {
+    background: #333;
+    padding: 8px;
+    border-radius: 8px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio .portfolio-item:hover, #live-demos .portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#portfolio .portfolio-item img, #live-demos .portfolio-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border-radius: 5px;
     transition: transform 0.3s ease;
 }
 
-#portfolio .portfolio-item:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+#portfolio .portfolio-item:hover img, #live-demos .portfolio-item:hover img {
+    transform: scale(1.03);
 }
 
-#portfolio .portfolio-item img {
-    width: 100%; /* Fill the container width */
-    height: 270px; /* 30% increase from 208px */
-    object-fit: cover; /* Crop the image to fit the dimensions */
-    margin-bottom: 10px; /* Space below the image */
-    border-radius: 5px; /* Rounded corners */
+#portfolio .portfolio-item h3, #live-demos .portfolio-item h3 {
+    margin: 8px 0 6px;
+    color: #4bd8c6;
+    font-size: 14px;
 }
 
-#portfolio .portfolio-item h3 {
-    margin: 10px 0 8px; /* Margin above and below the heading */
-    color: #4bd8c6; /* Blue text for headings */
-    font-size: 16px; /* Smaller font size for headings */
+#portfolio .portfolio-item p, #live-demos .portfolio-item p {
+    font-size: 11px;
+    color: #ccc;
+    margin: 0;
+    line-height: 1.4;
 }
 
-#portfolio .portfolio-item p {
-    font-size: 12px; /* Smaller font size for descriptions */
-    color: #ccc; /* Light gray text for descriptions */
-    margin: 0; /* Remove extra margin */
+#portfolio .portfolio-item a, #live-demos .portfolio-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
-
 
 /* Floating Contact Sidebar */
 .contact-sidebar {
@@ -352,209 +271,92 @@ footer {
     display: flex;
     flex-direction: column;
     z-index: 1000;
-    gap: 15px; /* Space between icons */
+    gap: 15px;
 }
 
-/* Contact Icon Styling */
 .contact-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Icon size */
+    width: 50px;
     height: 50px;
-    background: radial-gradient(circle, #005de0 0%, #072f60 100%); /* Logo gradient colors */
-    border-radius: 50%; /* Circular shape */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    text-decoration: none; /* No underline */
+    background: radial-gradient(circle, #005de0 0%, #072f60 100%);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
     border: none;
-    position: relative;
     transition: all 0.3s ease;
 }
 
-/* Icons Inside the Buttons */
-.contact-item.email::before,
-.contact-item.phone::before,
-.contact-item.whatsapp::before {
-    display: inline-block;
-    width: 30px; /* Set consistent size */
-    height: 30px;
-    line-height: 30px; /* Center-align text-based icons */
-    font-size: 24px; /* Adjust font size for text-based icons */
-    position: absolute;
-    left: 10px; /* Adjust horizontal alignment */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Correct vertical centering */
-}
-
-/* Individual Icon Content */
-.contact-item.email::before {
-    content: "✉️"; /* Email Icon */
-}
-
-.contact-item.phone::before {
-    content: "📞"; /* Phone Icon */
-}
-
-.contact-item.whatsapp::before {
-    content: url(''); /* WhatsApp Icon */
-    object-fit: contain; /* Ensure image proportions */
-}
-
-
-/* Hover Effects */
 .contact-item:hover {
-    transform: scale(1.1); /* Slight zoom effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Stronger shadow */
-    background: radial-gradient(circle, #26487b 0%, #bacde8 100%); /* Inverted gradient */
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    background: radial-gradient(circle, #26487b 0%, #bacde8 100%);
 }
 
-/* Remove All Text from Surrounding Elements */
-.contact-item::after,
 .contact-item span {
-    display: none; /* No extra text anywhere */
+    font-size: 30px;
+    color: white;
+}
+
+.contact-item img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .service-cards {
+        flex-direction: column;
+    }
+
     .contact-item {
-        width: 40px; /* Smaller icons for mobile */
+        width: 40px;
         height: 40px;
     }
 
-    .contact-item::before {
-        font-size: 20px; /* Adjust icon size */
-    }
-}
-/* Styling for the Clients and Contact Section layout */
-.clients-contact-layout {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;  /* Ensures it wraps on smaller screens */
-}
-
-/* Styling for the Clients Section */
-.clients {
-    flex: 1;
-    background-color: #080707;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(16, 16, 16, 0.1);
-}
-
-.clients h2 {
-    font-size: 1.5em;  /* Slightly larger font size for heading */
-    margin-bottom: 20px;
-}
-
-.clients ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.clients li {
-    font-size: 0.8em;  /* Further reduced font size for client names */
-    background: radial-gradient(circle, #d4d3d1 0%, #185bac 100%); /* Logo gradient colors */
-    padding: 10px 20px;
-    border-radius: 50px;
-    color: rgb(15, 10, 10); /* Text color */
-    font-weight: bold;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-}
-
-.clients li:hover {
-    transform: scale(1.1);  /* Slight enlarge on hover */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);  /* Shadow on hover */
-}
-
-/* Radial gradient background for Partner Names */
-.partners-cloud span {
-    font-size: 0.6em;  /* Further reduced font size for partner names */
-    font-weight: bold;
-    color: #fff;  /* White text for contrast */
-    transition: all 0.3s ease;
-    cursor: pointer;
-    background: radial-gradient(circle, #005de0 0%, #072f60 100%);  /* Gradient for partner names */
-    padding: 10px 20px;
-    border-radius: 50px;  /* Rounded pill shape */
-    text-align: center;
-    display: inline-block;
-    margin: 5px;
-    transition: transform 0.3s ease, font-size 0.3s ease;
-}
-
-/* Hover effect for partners */
-.partners-cloud span:hover {
-    color: #fff;
-    transform: scale(1.2);  /* Slight enlarge */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Shadow effect */
-}
-
-/* Word Cloud Effect - Random Sizes for Partners */
-.partners-cloud span:nth-child(odd) {
-    font-size: 1em;  /* Slightly larger for odd elements */
-}
-
-.partners-cloud span:nth-child(even) {
-    font-size: 0.8em;  /* Slightly smaller for even elements */
-}
-
-.partners-cloud span:nth-child(3n) {
-    font-size: 1.2em;  /* Even larger for every third partner */
-}
-
-/* Styling for Contact Section */
-.contact {
-    flex: 1;
-    background-color: #0f0e0e;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact input,
-.contact textarea {
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #1a1717;
-    border-radius: 8px;
-}
-
-.contact button {
-    padding: 12px;
-    font-size: 1.1em;
-    background-color: #005de0;
-    color: rgb(197, 138, 21);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.contact button:hover {
-    background-color: #072f60;
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .clients-contact-layout {
-        flex-direction: column;
-        align-items: center;
+    .contact-item span {
+        font-size: 20px;
     }
 
-    .clients,
-    .contact {
-        width: 100%;
-        margin-bottom: 20px;
+    .contact-item img {
+        width: 24px;
+        height: 24px;
+    }
+
+    #portfolio .portfolio-grid, #live-demos .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    #portfolio .portfolio-item img, #live-demos .portfolio-item img {
+        height: 150px;
+    }
+
+    #portfolio .portfolio-item h3, #live-demos .portfolio-item h3 {
+        font-size: 13px;
+    }
+
+    #portfolio .portfolio-item p, #live-demos .portfolio-item p {
+        font-size: 10px;
     }
 }
