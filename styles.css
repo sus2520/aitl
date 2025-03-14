@@ -211,41 +211,49 @@ section h2 {
 
 #portfolio .portfolio-grid, #live-demos .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Smaller grid items */
+    gap: 20px; /* Increased gap for better spacing */
     padding: 0 10px;
 }
 
 #portfolio .portfolio-item, #live-demos .portfolio-item {
     background: #333;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 8px; /* Reduced padding */
+    border-radius: 8px; /* Slightly larger radius for polish */
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #portfolio .portfolio-item:hover, #live-demos .portfolio-item:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 #portfolio .portfolio-item img, #live-demos .portfolio-item img {
     width: 100%;
-    height: 270px;
+    height: 180px; /* Reduced from 270px for smaller items */
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduced margin */
     border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+#portfolio .portfolio-item:hover img, #live-demos .portfolio-item:hover img {
+    transform: scale(1.03); /* Subtle zoom on hover */
 }
 
 #portfolio .portfolio-item h3, #live-demos .portfolio-item h3 {
-    margin: 10px 0 8px;
+    margin: 8px 0 6px; /* Adjusted margins */
     color: #4bd8c6;
-    font-size: 16px;
+    font-size: 14px; /* Slightly smaller font */
 }
 
 #portfolio .portfolio-item p, #live-demos .portfolio-item p {
-    font-size: 12px;
+    font-size: 11px; /* Slightly smaller font */
     color: #ccc;
     margin: 0;
+    line-height: 1.4; /* Improved readability */
 }
 
 #portfolio .portfolio-item a, #live-demos .portfolio-item a {
@@ -348,6 +356,18 @@ footer {
     }
 
     #portfolio .portfolio-grid, #live-demos .portfolio-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Even smaller on mobile */
+    }
+
+    #portfolio .portfolio-item img, #live-demos .portfolio-item img {
+        height: 150px; /* Further reduced for mobile */
+    }
+
+    #portfolio .portfolio-item h3, #live-demos .portfolio-item h3 {
+        font-size: 13px;
+    }
+
+    #portfolio .portfolio-item p, #live-demos .portfolio-item p {
+        font-size: 10px;
     }
 }
