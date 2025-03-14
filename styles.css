@@ -6,23 +6,25 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.9;
-    color: #333;
-    background: #1b2336; /* Matches dark gradient from the logo */
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    line-height: 1.8;
+    color: #e0e0e0; /* Softer white for readability */
+    background: linear-gradient(135deg, #1b2336 0%, #0b1726 100%); /* Subtle gradient background */
+    overflow-x: hidden;
 }
 
 .container {
     width: 100%;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1280px; /* Slightly wider for modern screens */
+    padding: 0 20px;
 }
 
 /* Header */
 header {
-    background: linear-gradient(to right, #1e5eb2, #c58a1e); /* Blue to orange gradient */
+    background: linear-gradient(90deg, #1e5eb2, #ff8c00); /* Vibrant gradient */
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,344 +32,349 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 header .logo img {
-    height: 60px;
+    height: 70px; /* Slightly larger logo */
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: scale(1.1); /* Subtle hover effect */
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    gap: 25px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
 header nav ul li a:hover {
+    background: rgba(255, 165, 0, 0.2); /* Subtle hover background */
     color: #ffa500;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    background: linear-gradient(to bottom, #4e5151, #072f60);
+    background: linear-gradient(to bottom, #072f60, #1e5eb2); /* Richer gradient */
     color: #fff;
-    padding: 50px 0;
+    padding: 80px 0; /* More breathing room */
     margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    opacity: 0.5;
+    z-index: 0;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    color: #ffa500; /* Orange highlight */
+    font-size: 3rem; /* Larger, bolder heading */
+    color: #ffa500;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    position: relative;
+    z-index: 1;
 }
 
 .hero p {
-    font-size: 1.2em;
-    color: #ccc;
+    font-size: 1.3rem;
+    color: #d1e8ff; /* Softer blue-white */
+    margin: 15px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .hero .btn {
     display: inline-block;
-    margin: 20px 0;
-    padding: 10px 20px;
+    margin: 25px 0;
+    padding: 12px 30px;
     color: #fff;
     background: #043046;
     text-decoration: none;
-    border-radius: 9px;
-    transition: background 0.3s ease;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
 }
 
 .hero .btn:hover {
     background: #ffa500;
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 8px 20px rgba(255, 165, 0, 0.5);
 }
 
 /* Section Styles */
 section {
-    padding: 30px 0;
+    padding: 60px 0;
     color: #fff;
+    position: relative;
 }
 
 section h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #ffa500;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .section-subtitle {
     text-align: center;
-    font-size: 1.2em;
-    color: #ccc;
-    margin-bottom: 30px;
+    font-size: 1.3rem;
+    color: #b0c4de;
+    margin-bottom: 40px;
 }
 
 /* About Us Section */
 .about-section {
-    padding: 50px 20px;
-    background-color: #0b1726; /* Matches your overall theme */
-    color: #fff;
+    padding: 60px 20px;
+    background: #0b1726;
     text-align: center;
 }
 
 .about-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Side-by-side layout */
     align-items: center;
-    gap: 20px;
-}
-
-.about-logo-container {
-    text-align: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .about-logo {
-    display: block;
-    margin: 30px auto;
-    height: 210px;
-    width: auto;
-    border-radius: 15px;
-    border: 5px solid rgba(0, 93, 224, 0.8);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+    height: 220px;
+    border-radius: 20px;
+    border: 5px solid #1e5eb2;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
 }
 
 .about-logo:hover {
-    transform: scale(1.2) rotate(3deg);
-    box-shadow: 0 12px 24px rgba(202, 140, 7, 0.6);
-    border: 5px solid rgba(255, 165, 0, 0.8);
+    transform: scale(1.15) rotate(5deg);
+    border-color: #ffa500;
+    box-shadow: 0 15px 35px rgba(255, 165, 0, 0.6);
 }
 
 .about-description {
-    max-width: 700px;
-    text-align: center;
-    line-height: 1.8;
-    font-size: 18px;
-    color: #ccc;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #d1e8ff;
 }
 
 .about-description p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .learn-more-link {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #39a3a3;
-    color: rgb(63, 58, 58);
-    border-radius: 25px;
-    font-weight: bold;
+    padding: 12px 25px;
+    background: #39a3a3;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .learn-more-link:hover {
-    background-color: #ffaf00;
-    color: #0b1726;
+    background: #ffa500;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
 }
 
 /* Services Section */
 .service-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
 }
 
 .card {
-    flex: 1;
-    background: #333;
-    padding: 20px;
-    border: 1px solid #dbdbdb;
+    background: #1e2a44; /* Darker, richer card background */
+    padding: 30px;
+    border-radius: 15px;
     text-align: center;
-    border-radius: 5px;
-    color: #fff;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 165, 0, 0.3);
 }
 
 .card i {
-    font-size: 36px;
+    font-size: 40px;
     color: #ffa500;
+    margin-bottom: 15px;
 }
 
 .card h3 {
-    margin: 10px 0;
+    margin: 15px 0;
     color: #4bd8c6;
+    font-size: 1.5rem;
 }
 
 /* Portfolio & Live Demos Sections */
 #portfolio, #live-demos {
-    padding: 50px 0;
+    padding: 70px 0;
+    background: #0b1726;
 }
 
 #portfolio .portfolio-grid, #live-demos .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Smaller grid items */
-    gap: 20px; /* Increased gap for better spacing */
-    padding: 0 10px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
 }
 
 #portfolio .portfolio-item, #live-demos .portfolio-item {
-    background: #333;
-    padding: 8px; /* Reduced padding */
-    border-radius: 8px; /* Slightly larger radius for polish */
+    background: #1e2a44;
+    padding: 15px;
+    border-radius: 12px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #portfolio .portfolio-item:hover, #live-demos .portfolio-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 165, 0, 0.4);
 }
 
 #portfolio .portfolio-item img, #live-demos .portfolio-item img {
     width: 100%;
-    height: 180px; /* Reduced from 270px for smaller items */
+    height: 200px;
     object-fit: cover;
-    margin-bottom: 8px; /* Reduced margin */
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
 }
 
 #portfolio .portfolio-item:hover img, #live-demos .portfolio-item:hover img {
-    transform: scale(1.03); /* Subtle zoom on hover */
+    transform: scale(1.05);
 }
 
 #portfolio .portfolio-item h3, #live-demos .portfolio-item h3 {
-    margin: 8px 0 6px; /* Adjusted margins */
+    margin: 10px 0;
     color: #4bd8c6;
-    font-size: 14px; /* Slightly smaller font */
+    font-size: 1.3rem;
 }
 
 #portfolio .portfolio-item p, #live-demos .portfolio-item p {
-    font-size: 11px; /* Slightly smaller font */
-    color: #ccc;
-    margin: 0;
-    line-height: 1.4; /* Improved readability */
-}
-
-#portfolio .portfolio-item a, #live-demos .portfolio-item a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+    font-size: 1rem;
+    color: #b0c4de;
 }
 
 /* Floating Contact Sidebar */
 .contact-sidebar {
     position: fixed;
     top: 50%;
-    left: 0;
+    left: 20px;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
+    gap: 20px;
     z-index: 1000;
-    gap: 15px;
 }
 
 .contact-item {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1e5eb2, #043046);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    background: radial-gradient(circle, #005de0 0%, #072f60 100%);
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-    border: none;
-    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
 }
 
-.contact-item::before {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 24px;
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.contact-item.email::before {
-    content: "✉️";
-}
-
-.contact-item.phone::before {
-    content: "📞";
-}
-
 .contact-item:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-    background: radial-gradient(circle, #26487b 0%, #bacde8 100%);
+    transform: scale(1.15);
+    background: linear-gradient(135deg, #ffa500, #ff8c00);
+    box-shadow: 0 10px 20px rgba(255, 165, 0, 0.5);
 }
 
 .contact-item img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
+    width: 35px;
+    height: 35px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
+    padding: 20px 0;
+    background: #1e2a44;
+    color: #b0c4de;
+    font-size: 1.1rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        text-align: center;
+        padding: 20px;
     }
 
     header nav ul {
         flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-description {
+        text-align: center;
     }
 
     .service-cards {
-        flex-direction: column;
-    }
-
-    .contact-item {
-        width: 40px;
-        height: 40px;
-    }
-
-    .contact-item::before {
-        font-size: 20px;
+        grid-template-columns: 1fr;
     }
 
     #portfolio .portfolio-grid, #live-demos .portfolio-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Even smaller on mobile */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-    #portfolio .portfolio-item img, #live-demos .portfolio-item img {
-        height: 150px; /* Further reduced for mobile */
+    .contact-item {
+        width: 50px;
+        height: 50px;
     }
 
-    #portfolio .portfolio-item h3, #live-demos .portfolio-item h3 {
-        font-size: 13px;
-    }
-
-    #portfolio .portfolio-item p, #live-demos .portfolio-item p {
-        font-size: 10px;
+    .contact-item img {
+        width: 30px;
+        height: 30px;
     }
 }
