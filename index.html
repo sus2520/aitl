@@ -10,6 +10,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chatbot.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -298,8 +299,6 @@
             </div>
         </div>
     </section>
-
-    
     
 <!-- Live Demos Section -->
 <section id="live-demos">
@@ -361,3 +360,46 @@
         <p>&copy; 2024 Adapt AI. All rights reserved.</p>
     </div>
 </footer>
+
+<div class="chatbot-container">
+    <div class="chatbot-header">
+        <h3>ADPTAI Assistant</h3>
+        <span class="chatbot-close">×</span>
+    </div>
+    <div class="chatbot-body">
+        <div class="chatbot-section">
+            <h4>Project Description</h4>
+            <p>At ADPTAI, we specialize in innovative AI solutions, delivering cutting-edge projects in automation, machine learning, and data analytics. <a href="portfolio.html" target="_blank">Explore our portfolio</a> to see how we transform ideas into impactful technologies.</p>
+        </div>
+        <div class="chatbot-section">
+            <h4>Contact Us</h4>
+            <p>Email: <a href="mailto:info@adptai.in">info@adptai.in</a><br>Phone: <a href="tel:+918148347491">+91-8148347491</a><br><a href="https://wa.me/+918148347491" target="_blank">Send us a message</a>
+        </div>
+    </div>
+    <div class="chatbot-footer">
+        <input type="text" placeholder="Type a message..." disabled>
+        <button>Send</button>
+    </div>
+</div>
+<div class="chatbot-toggle">Chatbot</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const chatbotContainer = document.querySelector('.chatbot-container');
+        const chatbotToggle = document.querySelector('.chatbot-toggle');
+        const chatbotClose = document.querySelector('.chatbot-close');
+
+        // Show chatbot when toggle button is clicked
+        chatbotToggle.addEventListener('click', () => {
+            chatbotContainer.style.display = 'block';
+            chatbotToggle.style.display = 'none';
+        });
+
+        // Hide chatbot when close button is clicked
+        chatbotClose.addEventListener('click', () => {
+            chatbotContainer.style.display = 'none';
+            chatbotToggle.style.display = 'block';
+        });
+    });
+</script>
+</body>
+</html>

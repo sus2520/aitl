@@ -360,3 +360,101 @@ footer {
         font-size: 10px;
     }
 }
+.chatbot-container {
+    position: fixed;
+    bottom: 100px; /* Adjusted to avoid overlap with existing contact sidebar */
+    right: 20px;
+    width: 300px;
+    background-color: #1a2a44; /* Dark blue from website background */
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+}
+
+.chatbot-header {
+    background-color: #f5a623; /* Orange from website text */
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.chatbot-close {
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+.chatbot-body {
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chatbot-section {
+    margin-bottom: 15px;
+}
+
+.chatbot-section h4 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    color: #80bfff; /* Light blue inspired by logo */
+}
+
+.chatbot-section p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.chatbot-section a {
+    color: #80bfff;
+    text-decoration: none;
+}
+
+.chatbot-footer {
+    padding: 10px;
+    border-top: 1px solid #333;
+    display: flex;
+    gap: 10px;
+}
+
+.chatbot-footer input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.chatbot-footer button {
+    padding: 8px 15px;
+    background-color: #b77d1f; /* Orange from website text */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c48013; /* Orange from website text */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
