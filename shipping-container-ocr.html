@@ -3,30 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shipping Container OCR - High-accuracy AI solution by Adapt AI">
+    <meta name="keywords" content="Shipping Container OCR, AI, OCR, Container Recognition, Logistics">
+    <meta name="author" content="Adapt AI">
     <title>Shipping Container OCR - Adapt AI</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="index.html"><img src="adaptai-logo.jpg" alt="Adapt AI Logo"></a>
-        </div>
-    </header>
+            <div class="logo">
+                <a href="index.html"><img src="adaptai-logo.jpg" alt="Adapt AI Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about-us">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
     <section class="project-detail">
         <div class="container">
             <h2>Shipping Container OCR</h2>
-            <img src="OCR.png" alt="Shipping Container OCR" style="width:100%; border-radius:8px;">
-            <p>Highly accurate, developer-friendly Shipping Container OCR designed to decode container codes under various conditions, including blurry, low-res, dark, angled, and rusty environments.</p>
+            <img src="OCR.png" alt="Shipping Container OCR" style="width:100%; border-radius:8px; margin-bottom:20px;">
+            <p>
+                Adapt AI’s Shipping Container OCR is a cutting-edge, AI-powered solution designed to accurately decode shipping container codes in real-time. Built for developers and businesses, this system excels in challenging environments—handling blurry, low-resolution, dark, over-exposed, angled, or rusty containers with unparalleled precision.
+            </p>
+
             <h3>Key Features</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>High Accuracy</h4>
+                    <p>Recognizes container codes in diverse conditions, including blurry images, low resolution, dark settings, over-exposure, tough angles, shadow marks, rusty text, and tank containers.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Fast Deployment</h4>
+                    <p>Seamlessly process live camera feeds (RTSP), video files, or static images. Deploy on-premise via Docker on x86 devices (no GPU required) or use our cloud service with JSON, webhooks, or CSV outputs.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-code"></i>
+                    <h4>Developer-Friendly</h4>
+                    <p>Includes an SDK for on-premise image processing (3 MB/image limit, 8 calls/sec in cloud) and fast inference speeds, making integration effortless for developers.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-file-export"></i>
+                    <h4>Detailed Results</h4>
+                    <p>Outputs include Owner & Product Group Code (4 letters), Registration Number (6 digits), Check Number (1 digit), and a confidence score for each recognition.</p>
+                </div>
+            </div>
+
+            <h3>Applications</h3>
             <ul>
-                <li><strong>Highly Accurate:</strong> Handles blurry, low-res, dark, over-exposed, and angled images with ease.</li>
-                <li><strong>Fast Deployment:</strong> Process live camera feeds, videos, or images on-premise or in the cloud with JSON, webhooks, or CSV outputs.</li>
-                <li><strong>Works With:</strong> Rusty text, shadow marks, tank containers, and tough angles.</li>
-                <li><strong>Results Include:</strong> Owner & Product Group Code (4 letters), Registration Number (6 digits), Check Number (1 digit), and confidence score.</li>
+                <li><strong>Logistics & Shipping:</strong> Automate container tracking and inventory management at ports and warehouses.</p>
+                <li><strong>Security:</strong> Enhance gate automation and access control with real-time container identification.</p>
+                <li><strong>Supply Chain Optimization:</strong> Streamline operations by integrating with existing systems via API or webhooks.</p>
             </ul>
-            <a href="#contact" class="btn">Get Free Trial</a>
+
+            <h3>Technical Specifications</h3>
+            <p>
+                - <strong>Live Camera:</strong> Processes RTSP feeds for real-time monitoring.<br>
+                - <strong>Video Processing:</strong> Analyzes video files programmatically in bulk.<br>
+                - <strong>Image Processing:</strong> Supports up to 3 MB images with rapid inference.<br>
+                - <strong>Deployment Options:</strong> On-premise (Docker, x86) or cloud-hosted.<br>
+                - <strong>Output Formats:</strong> JSON, CSV, or webhooks for easy integration.
+            </p>
+
+            <h3>Try It Out</h3>
+            <p>Upload an image (up to 3MB) and see our Shipping Container OCR in action. No credit card required for the free trial!</p>
+            <a href="index.html#contact" class="btn">Get Free Trial</a>
         </div>
     </section>
+
     <footer>
         <div class="container">
             <p>© 2024 Adapt AI. All rights reserved.</p>
