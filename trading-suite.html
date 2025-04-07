@@ -3,157 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Indicators - Product Overview</title>
+    <meta name="description" content="Trading Indicators - AI-powered solution by Adapt AI for advanced trading strategies">
+    <meta name="keywords" content="Trading Indicators, AI, Stock Market, Forex, Cryptocurrency, Trading Tools">
+    <meta name="author" content="Adapt AI">
+    <title>Trading Indicators - Adapt AI</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* General container styling */
+        .project-hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        .project-hero img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            filter: brightness(0.8);
+        }
+        .project-hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .project-hero-text h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .project-hero-text p {
+            font-size: 1.2em;
+        }
+        .project-detail {
+            padding: 40px 20px;
+            background: #1e2a44;
+            color: #fff;
+        }
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-            font-family: Arial, sans-serif;
+            padding: 0 20px;
         }
-
-        /* Heading styling with gradient */
-        h1 {
-            text-align: center;
-            font-size: 36px;
+        .project-detail h3 {
+            font-size: 2em;
+            color: #4ecdc4;
             margin-bottom: 20px;
-            background: linear-gradient(to right, #dde3eb, #bd8f11);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
+            text-shadow: 0 0 5px rgba(78, 205, 196, 0.5);
         }
-
-        h2 {
+        .project-detail p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .feature-item {
             text-align: center;
-            font-size: 28px;
-            margin-bottom: 15px;
-            background: linear-gradient(to right, #f1f0ec, #5cc0ef);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
+            padding: 20px;
+            background: rgba(30, 42, 68, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-
-        p, ul {
-            color: #FFFFFF;
-            font-size: 18px;
-            line-height: 1.8;
-        }
-
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            position: relative;
-            padding-left: 30px;
+        .feature-item i {
+            font-size: 2em;
+            color: #4ecdc4;
             margin-bottom: 10px;
         }
-
-        ul li:before {
-            content: '✔';
-            position: absolute;
-            left: 0;
-            color: #FFA500;
-            font-size: 20px;
+        .feature-item h4 {
+            font-size: 1.3em;
+            color: #a3bffa;
+            margin-bottom: 10px;
         }
-
-        /* Image styling */
-        .portfolio-image {
-            max-width: 70%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        .feature-item p {
+            font-size: 0.95em;
+            color: #ccc;
         }
-
-        /* Header and body background styling with gradient */
-        body {
-            background: linear-gradient(to bottom, #1e5eb2, #c58a1e);
-            margin: 0;
-            font-family: Arial, sans-serif;
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 20px;
         }
-
-        header {
-            background: linear-gradient(to right, #1e5eb2, #c58a1e);
-            padding: 10px 0;
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
-
-        header .logo img {
-            max-width: 150px;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #FFFFFF;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: #FFA500;
-        }
-
-        /* Footer styling */
-        footer {
-            background-color: #222;
-            color: #FFF;
-            padding: 10px 0;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        footer a {
-            color: #FFA500;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive styling */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 22px;
-            }
-
-            p, ul {
-                font-size: 16px;
-            }
-
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
+        ul li strong {
+            color: #4ecdc4;
         }
     </style>
 </head>
@@ -161,64 +103,85 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="adaptai-logo.jpg" alt="Adapt AI Logo">
-                </a>
+                <a href="index.html"><img src="adaptai-logo.jpg" alt="Adapt AI Logo"></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#features">Features</a></li>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about-us">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="trading-overview">
+    <section class="project-hero">
+        <img src="trade.png" alt="Trading Dashboard">
+        <div class="project-hero-text">
+            <h2>Trading Indicators Revolution</h2>
+            <p>AI-powered tools for advanced trading strategies</p>
+        </div>
+    </section>
+
+    <section class="project-detail">
         <div class="container">
-            <h1>Advanced Trading Indicators Suite</h1>
+            <h3>Overview</h3>
             <p>
-                Unlock the full potential of your trading strategy with our <strong>“Advanced Trading Indicators Suite”</strong>. Designed for both beginner and professional traders, this product helps identify buy/sell opportunities, backtest strategies, and maximize profitability.
+                Adapt AI’s Advanced Trading Indicators Suite leverages cutting-edge artificial intelligence to empower traders with real-time insights and strategic tools. Designed for both novice and professional traders, this suite provides customizable indicators, backtesting capabilities, and automated alerts, enabling users to maximize profitability across diverse financial markets.
             </p>
-            <img src="trade.png" alt="Trading Dashboard" class="portfolio-image">
 
-            <h2 id="features">Key Features:</h2>
+            <h3>Key Features</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-signal"></i>
+                    <h4>Real-Time Buy/Sell Signals</h4>
+                    <p>Generates instant trading signals based on market trends and AI analysis.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-sliders-h"></i>
+                    <h4>Customizable Indicators</h4>
+                    <p>Allows users to tailor indicators to their specific trading strategies.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-play"></i>
+                    <h4>Comprehensive Backtesting</h4>
+                    <p>Enables testing of strategies against historical data for reliability.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-bell"></i>
+                    <h4>Automated Trading Alerts</h4>
+                    <p>Sends notifications for optimal trading opportunities 24/7.</p>
+                </div>
+            </div>
+
+            <h3>Output Details</h3>
+            <p>
+                Our Trading Indicators Suite delivers detailed outputs to enhance trading decisions, including:
+                <ul>
+                    <li><strong>Buy/Sell Signals:</strong> Real-time recommendations with confidence levels.</li>
+                    <li><strong>Backtest Results:</strong> Historical performance metrics (e.g., profit/loss, win rate).</li>
+                    <li><strong>Market Trends:</strong> Analysis of current market conditions and forecasts.</li>
+                    <li><strong>Alert Logs:</strong> Record of triggered alerts with timestamps.</li>
+                    <li><strong>Risk Assessment:</strong> Evaluation of potential risks for each trade.</li>
+                </ul>
+            </p>
+
+            <h3>Use Cases</h3>
             <ul>
-                <li>Real-time buy/sell signals</li>
-                <li>Customizable indicators</li>
-                <li>Comprehensive backtesting tools</li>
-                <li>Automated trading alerts</li>
-                <li>Integration with major platforms (MetaTrader, TradingView, etc.)</li>
-                <li>Detailed analytics and reporting</li>
+                <li><strong>Stock Trading:</strong> Optimize stock market investments with precise signals.</li>
+                <li><strong>Forex Trading:</strong> Enhance currency trading with real-time insights.</li>
+                <li><strong>Cryptocurrency Trading:</strong> Maximize gains in volatile crypto markets.</li>
+                <li><strong>Commodity Trading:</strong> Improve decisions for gold, silver, and oil markets.</li>
+                <li><strong>Portfolio Management:</strong> Support diversified portfolios with comprehensive analytics.</li>
             </ul>
-
-            <h2>Why Choose Our Software?</h2>
-            <ul>
-                <li>1. Easy-to-use interface</li>
-                <li>2. Improved decision-making</li>
-                <li>3. Minimized risks through strategy testing</li>
-                <li>4. 24/7 market monitoring</li>
-            </ul>
-
-            <h2>Supported Markets:</h2>
-            <ul>
-                <li>Stocks</li>
-                <li>Forex</li>
-                <li>Cryptocurrency</li>
-                <li>Commodities (Gold, Silver, Oil)</li>
-                <li>Indices (NASDAQ, S&P 500)</li>
-                <li>ETFs (Exchange-Traded Funds)</li>
-                <li>Futures Contracts</li>
-                <li>Options</li>
-                <li>Bonds</li>
-                <li>Emerging Markets</li>
-            </ul>            
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Adapt AI. All rights reserved.</p>
+            <p>© 2025 Adapt AI. All rights reserved.</p>
         </div>
     </footer>
 </body>

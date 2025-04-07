@@ -3,157 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math to LaTeX PDF Generator - Project Overview</title>
+    <meta name="description" content="Math to LaTeX PDF Generator - AI-powered solution by Adapt AI for mathematical document creation">
+    <meta name="keywords" content="Math to LaTeX, PDF Generator, AI, LaTeX, Mathematical Formatting">
+    <meta name="author" content="Adapt AI">
+    <title>Math to LaTeX PDF Generator - Adapt AI</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* General container styling */
+        .project-hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        .project-hero img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            filter: brightness(0.8);
+        }
+        .project-hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .project-hero-text h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .project-hero-text p {
+            font-size: 1.2em;
+        }
+        .project-detail {
+            padding: 40px 20px;
+            background: #1e2a44;
+            color: #fff;
+        }
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-            font-family: Arial, sans-serif;
+            padding: 0 20px;
         }
-
-        /* Heading styling with gradient */
-        h1 {
-            text-align: center;
-            font-size: 36px;
+        .project-detail h3 {
+            font-size: 2em;
+            color: #4ecdc4;
             margin-bottom: 20px;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
+            text-shadow: 0 0 5px rgba(78, 205, 196, 0.5);
         }
-
-        h2 {
+        .project-detail p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .feature-item {
             text-align: center;
-            font-size: 28px;
-            margin-bottom: 15px;
-            background: linear-gradient(to right, #ff9966, #ff5e62);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
+            padding: 20px;
+            background: rgba(30, 42, 68, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-
-        p, ul {
-            color: #FFFFFF; /* Bright white text */
-            font-size: 18px;
-            line-height: 1.8;
-        }
-
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            position: relative;
-            padding-left: 30px;
+        .feature-item i {
+            font-size: 2em;
+            color: #4ecdc4;
             margin-bottom: 10px;
         }
-
-        ul li:before {
-            content: '✔';
-            position: absolute;
-            left: 0;
-            color: #4caf50;
-            font-size: 20px;
+        .feature-item h4 {
+            font-size: 1.3em;
+            color: #a3bffa;
+            margin-bottom: 10px;
         }
-
-        /* Image styling */
-        .portfolio-image {
-            max-width: 70%; /* Reduced size */
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        .feature-item p {
+            font-size: 0.95em;
+            color: #ccc;
         }
-
-        /* Header and body background styling with gradient */
-        body {
-            background: linear-gradient(to bottom, #3a1c71, #2aaccf, #ffaf7b);
-            margin: 0;
-            font-family: Arial, sans-serif;
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 20px;
         }
-
-        header {
-            background: linear-gradient(to right, #3a1c71, #3666b2);
-            padding: 10px 0;
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
-
-        header .logo img {
-            max-width: 150px;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #FFFFFF;
-            text-decoration: none;
-            font-size: 20px; /* Increased font size for "Home" */
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: #e7ddd9;
-        }
-
-        /* Footer styling */
-        footer {
-            background-color: #222;
-            color: #FFF; /* Bright white text for footer */
-            padding: 10px 0;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        footer a {
-            color: #eae5e2; /* Bright orange link */
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive styling */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 22px;
-            }
-
-            p, ul {
-                font-size: 16px;
-            }
-
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
+        ul li strong {
+            color: #4ecdc4;
         }
     </style>
 </head>
@@ -161,48 +103,82 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="adaptai-logo.jpg" alt="Math to LaTeX Logo" />
-                </a>
+                <a href="index.html"><img src="adaptai-logo.jpg" alt="Adapt AI Logo"></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about-us">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="math-to-latex">
+    <section class="project-hero">
+        <img src="math-to-latex.png" alt="Math to LaTeX PDF Generator">
+        <div class="project-hero-text">
+            <h2>Math to LaTeX PDF Revolution</h2>
+            <p>AI-powered tool for seamless mathematical document creation</p>
+        </div>
+    </section>
+
+    <section class="project-detail">
         <div class="container">
-            <h1>Math to LaTeX PDF Generator</h1>
+            <h3>Overview</h3>
             <p>
-                Presenting Adapt AI's product <strong>“Math to LaTeX PDF Generator”</strong> – Advanced tools for converting mathematical expressions into LaTeX code and generating professional-quality PDFs.
+                Adapt AI’s Math to LaTeX PDF Generator harnesses advanced artificial intelligence to transform mathematical expressions into precise LaTeX code and generate professional-quality PDFs. Designed for educators, researchers, and students, this tool ensures accuracy and efficiency, even with complex equations, under various formatting conditions.
             </p>
-            <img src="math-to-latex.png" alt="Math to LaTeX System" class="portfolio-image">
 
-            <h2>Key Features:</h2>
+            <h3>Key Features</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-magic"></i>
+                    <h4>Real-Time LaTeX Conversion</h4>
+                    <p>Converts mathematical input into LaTeX code instantly with high accuracy.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <h4>Integrated PDF Export</h4>
+                    <p>Generates professional PDFs directly from LaTeX code with customizable layouts.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-edit"></i>
+                    <h4>Interactive Editor</h4>
+                    <p>Offers a user-friendly editor with syntax highlighting for easy formatting.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-cogs"></i>
+                    <h4>Customizable Templates</h4>
+                    <p>Provides flexible document templates tailored to academic and professional needs.</p>
+                </div>
+            </div>
+
+            <h3>Output Details</h3>
+            <p>
+                Our Math to LaTeX PDF Generator delivers comprehensive results, including:
+                <ul>
+                    <li><strong>LaTeX Code:</strong> Precisely formatted code for mathematical expressions.</li>
+                    <li><strong>PDF Document:</strong> High-quality PDF with rendered equations.</li>
+                    <li><strong>Validation Report:</strong> Feedback on syntax accuracy and suggestions.</li>
+                    <li><strong>Export Options:</strong> Support for multiple file formats (PDF, DOCX).</li>
+                </ul>
+            </p>
+
+            <h3>Use Cases</h3>
             <ul>
-                <li>Real-time LaTeX code generation from mathematical input</li>
-                <li>Integrated PDF rendering and export capabilities</li>
-                <li>Interactive editor with syntax highlighting</li>
-                <li>Support for advanced mathematical functions and symbols</li>
-                <li>Customizable document templates</li>
+                <li><strong>Academic Research:</strong> Streamline the creation of research papers with complex equations.</li>
+                <li><strong>Educational Tools:</strong> Assist students and teachers in generating homework or lecture materials.</li>
+                <li><strong>Technical Documentation:</strong> Enhance manuals and guides with accurate mathematical content.</li>
             </ul>
-
-            <h2>Skills and Experience We Have:</h2>
-            <ul>
-                <li>Expertise in LaTeX and mathematical formatting</li>
-                <li>Proficient in building PDF generation tools</li>
-                <li>Experience with front-end technologies for user-friendly editing</li>
-                <li>Skilled in real-time syntax processing</li>
-            </ul>
-
+        </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Adapt AI. All rights reserved.</p>
+            <p>© 2025 Adapt AI. All rights reserved.</p>
         </div>
     </footer>
 </body>
