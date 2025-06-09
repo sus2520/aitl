@@ -705,46 +705,134 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-/* About Us Video Styling */
-.about-logo-container {
+/* About Us Section Styling */
+.about-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1e2a44, #2e4a6e);
+    color: #fff;
+    text-align: center;
+}
+
+.about-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.about-media-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
+    max-width: 400px;
+}
+
+.about-logo-container {
     width: 100%;
-    max-width: 400px; /* Adjust to match previous logo size */
-    margin: 0 auto 20px;
+}
+
+.about-logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(78, 205, 196, 0.5);
+}
+
+.about-video-container {
+    width: 100%;
 }
 
 .about-video {
+    display: block; /* Ensure video is visible */
     width: 100%;
+    max-width: 400px;
     height: auto;
-    max-height: 300px; /* Adjust based on your video’s aspect ratio */
-    object-fit: cover; /* Ensures video fills container without distortion */
-    border-radius: 10px; /* Matches other rounded elements */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Consistent shadow */
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-video:hover {
-    transform: scale(1.05); /* Subtle zoom on hover */
-    box-shadow: 0 10px 20px rgba(78, 205, 196, 0.5); /* Matches portfolio hover effect */
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(78, 205, 196, 0.5);
 }
 
-/* Responsive Adjustments */
+.video-fallback {
+    color: #ff9800;
+    font-size: 1em;
+    text-align: center;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about-description {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-description p {
+    font-size: 1.1em;
+    color: #a3bffa;
+    margin-bottom: 15px;
+}
+
+.learn-more-link {
+    color: #4ecdc4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.learn-more-link:hover {
+    color: #ff9800;
+    text-shadow: 0 0 5px #ff9800;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .about-logo-container {
-        max-width: 300px; /* Smaller container for mobile */
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-media-container {
+        max-width: 300px;
+    }
+    .about-logo {
+        max-width: 250px;
     }
     .about-video {
-        max-height: 200px; /* Adjust for mobile */
+        max-width: 300px;
+        max-height: 200px;
+    }
+    .about-description {
+        text-align: center;
     }
 }
 
 @media (max-width: 480px) {
-    .about-logo-container {
+    .about-media-container {
         max-width: 250px;
     }
+    .about-logo {
+        max-width: 200px;
+    }
     .about-video {
+        max-width: 250px;
         max-height: 150px;
     }
 }
