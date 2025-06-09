@@ -55,6 +55,7 @@
     </div>
 
     <!-- About Us Section -->
+    <!-- About Us Section -->
     <section id="about-us" class="about-section">
         <h2>About Us</h2>
         <div class="about-content">
@@ -756,7 +757,7 @@
 </style>
 
 <script>
-    // Dynamic Background and Parallax Effect for Portfolio
+    // Dynamic Background and Parallax Effect
     const portfolioGrids = document.querySelectorAll('.portfolio-grid');
     portfolioGrids.forEach(grid => {
         const bgUrl = grid.getAttribute('data-bg') || 'https://via.placeholder.com/1200x600';
@@ -780,7 +781,7 @@
         });
     });
 
-    // Add Pulse Animation to Portfolio Items on Load
+    // Add Pulse Animation to Items on Load
     const portfolioItems = document.querySelectorAll('.portfolio-item');
     portfolioItems.forEach(item => {
         item.addEventListener('mouseenter', () => {
@@ -790,18 +791,6 @@
             item.style.animation = 'none';
         });
     });
-
-    // Video Play/Pause Toggle for About Us Section
-    const aboutVideo = document.querySelector('.about-video');
-    if (aboutVideo) {
-        aboutVideo.addEventListener('click', () => {
-            if (aboutVideo.paused) {
-                aboutVideo.play();
-            } else {
-                aboutVideo.pause();
-            }
-        });
-    }
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
