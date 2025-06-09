@@ -27,7 +27,7 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -67,10 +67,7 @@
         <h2>About Us</h2>
         <div class="about-content">
             <div class="about-logo-container">
-                <video class="about-video" autoplay loop muted playsinline poster="adaptai-poster.jpg">
-                    <source src="assets/videos/adptai.mp4" type="video/mp4">
-                    <p>Your browser does not support the video tag. Please view our logo <a href="adaptai-logo.jpg">here</a>.</p>
-                </video>
+                <img src="adaptai-logo.jpg" alt="Adapt AI Logo" class="about-logo">
             </div>
             <div class="about-description">
                 <p>
@@ -606,6 +603,64 @@
             transform: scale(1.05);
         }
 
+        /* About Us Section Styling */
+        .about-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1e2a44, #2e4a6e);
+        }
+
+        .about-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5em;
+            color: #97720d;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px rgba(78, 205, 196, 0.7);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .about-logo-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-logo {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 2px solid #e07a26;
+        }
+
+        .about-description {
+            flex: 2;
+            font-size: 1.1em;
+            color: #a3bffa;
+        }
+
+        .about-description p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .learn-more-link {
+            color: #4ecdc4;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .learn-more-link:hover {
+            color: #ff9800;
+            text-shadow: 0 0 5px #ff9800;
+        }
+
         /* Portfolio Section Styling */
         #portfolio {
             padding: 80px 20px;
@@ -1013,6 +1068,13 @@
             .intro-video-container {
                 width: 80%;
             }
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-logo-container {
+                margin-bottom: 20px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1047,6 +1109,12 @@
             .video-control-btn {
                 width: 40px;
                 height: 40px;
+            }
+            .about-section h2 {
+                font-size: 2em;
+            }
+            .about-description {
+                font-size: 1em;
             }
         }
 
