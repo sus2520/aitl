@@ -8,10 +8,10 @@
     <meta name="author" content="Adapt AI">
     <title>Adapt AI</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="chatbot.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -27,7 +27,7 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
 
@@ -35,6 +35,18 @@
         <div class="container">
             <h2>Innovating with Artificial Intelligence</h2>
             <p>We provide cutting-edge AI solutions to transform your business.</p>
+            <div class="intro-video-container">
+                <div class="video-wrapper">
+                    <video class="intro-video" preload="metadata" loop muted playsinline poster="adaptai-poster.jpg">
+                        <source src="assets/videos/adptai.mp4" type="video/mp4">
+                        <p>Your browser does not support the video tag. Please view our introduction <a href="adaptai-logo.jpg">here</a>.</p>
+                    </video>
+                    <div class="video-overlay"></div>
+                    <button class="video-control-btn" id="video-control">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
             <a href="#contact" class="btn">Get Started</a>
         </div>
     </section>
@@ -43,42 +55,35 @@
         <a href="mailto:info@adptai.in?subject=Contact%20from%20Website&body=Hello,%0A%0AI%20would%20like%20to%20inquire%20about%20...">
             <span style="font-size: 30px; color: white;">✉️</span>
         </a>
-        
         <a href="tel:+918148347491" class="contact-item phone">
-            <span>📞</span> 
+            <span>📞</span>
         </a>
         <a href="https://wa.me/8148347491" target="_blank" class="contact-item whatsapp">
             <img src="whatsapp.png" alt="WhatsApp Icon" style="width: 32px; height: 32px;">
-    
         </a>
-
     </div>
 
-    <!-- About Us Section -->
-<section id="about-us" class="about-section">
-    <h2>About Us</h2>
-    <div class="about-content">
-        <div class="about-logo-container">
-            <video class="about-video" autoplay loop muted playsinline poster="adaptai-poster.jpg">
-                <source src="assets/videos/adptai.mp4" type="video/mp4">
-                <source src="assets/videos/adptai.webm" type="video/webm">
-                <p>Your browser does not support the video tag. Please view our logo <a href="adaptai-logo.jpg">here</a>.</p>
-            </video>
+    <section id="about-us" class="about-section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-logo-container">
+                <video class="about-video" autoplay loop muted playsinline poster="adaptai-poster.jpg">
+                    <source src="assets/videos/adptai.mp4" type="video/mp4">
+                    <p>Your browser does not support the video tag. Please view our logo <a href="adaptai-logo.jpg">here</a>.</p>
+                </video>
+            </div>
+            <div class="about-description">
+                <p>
+                    Adapt AI is a leading innovator in artificial intelligence, specializing in custom AI development, data analytics, and intelligent automation. Our mission is to empower businesses across all industries to achieve their goals efficiently and effectively through cutting-edge AI solutions.
+                </p>
+                <p>
+                    From healthcare and finance to manufacturing and retail, we provide tailored AI projects that cater to diverse industry needs, ensuring scalability and precision.
+                </p>
+                <a href="portfolio.html" class="learn-more-link">Learn More About Our Projects</a>
+            </div>
         </div>
-        <div class="about-description">
-            <p>
-                Adapt AI is a leading innovator in artificial intelligence, specializing in custom AI development, data analytics, and intelligent automation. Our mission is to empower businesses across all industries to achieve their goals efficiently and effectively through cutting-edge AI solutions.
-            </p>
-            <p>
-                From healthcare and finance to manufacturing and retail, we provide tailored AI projects that cater to diverse industry needs, ensuring scalability and precision.
-            </p>
-            <a href="portfolio.html" class="learn-more-link">Learn More About Our Projects</a>
-        </div>
-    </div>
-</section>
-    
+    </section>
 
-    <!-- Services Section -->
     <section id="services">
         <div class="container">
             <h2>Our Services</h2>
@@ -102,979 +107,1100 @@
         </div>
     </section>
 
-<!-- Portfolio Section -->
-<section id="portfolio">
-    <div class="container">
-        <h2 class="portfolio-title">Our Portfolio Excellence</h2>
-        <p class="portfolio-subtitle">Dive into a mesmerizing showcase of our groundbreaking AI innovations, revolutionizing industries with unparalleled precision and creativity.</p>
-
-        <!-- Education Category -->
-        <h3 class="category-title">Education</h3>
-        <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Education+BG">
-            <div class="portfolio-item">
-                <a href="math-to-latex.html">
-                    <img src="math-to-latex.png" alt="Math to LaTeX">
-                    <h3>Math to LaTeX</h3>
-                    <p>Transform complex mathematical equations into flawless LaTeX formats and generate precision-engineered PDFs with a single click.</p>
-                </a>
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="portfolio-title">Our Portfolio Excellence</h2>
+            <p class="portfolio-subtitle">Dive into a mesmerizing showcase of our groundbreaking AI innovations, revolutionizing industries with unparalleled precision and creativity.</p>
+            <h3 class="category-title">Education</h3>
+            <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Education+BG">
+                <div class="portfolio-item">
+                    <a href="math-to-latex.html">
+                        <img src="math-to-latex.png" alt="Math to LaTeX">
+                        <h3>Math to LaTeX</h3>
+                        <p>Transform complex mathematical equations into flawless LaTeX formats and generate precision-engineered PDFs with a single click.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="tutoring-chatbot.html">
+                        <img src="tutor-bot.png" alt="Intelligent Tutoring Chatbot">
+                        <h3>Intelligent Tutoring Chatbot</h3>
+                        <p>An AI-powered virtual tutor that adapts to individual learning styles, offering personalized guidance and real-time support.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="career-path-system.html">
+                        <img src="career-path.png" alt="Career Path Recommendation">
+                        <h3>Career Path Recommendation</h3>
+                        <p>Unlock your future with an AI-driven system that analyzes skills and interests, recommending tailored courses and career trajectories.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="handwritten-recognition.html">
+                        <img src="handwritten-recognition.png" alt="Handwritten Recognition">
+                        <h3>Handwritten Recognition</h3>
+                        <p>Effortlessly digitize handwritten notes with cutting-edge AI, achieving near-perfect accuracy for academic and professional use.</p>
+                    </a>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <a href="tutoring-chatbot.html">
-                    <img src="tutor-bot.png" alt="Intelligent Tutoring Chatbot">
-                    <h3>Intelligent Tutoring Chatbot</h3>
-                    <p>An AI-powered virtual tutor that adapts to individual learning styles, offering personalized guidance and real-time support.</p>
-                </a>
+            <h3 class="category-title">Logistics & Transportation</h3>
+            <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Logistics+BG">
+                <div class="portfolio-item">
+                    <a href="shipping-container-ocr.html">
+                        <img src="OCR.png" alt="Shipping Container OCR">
+                        <h3>Shipping Container OCR</h3>
+                        <p>Revolutionize cargo management with AI that decodes container codes with pinpoint accuracy, streamlining global logistics.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="wagon.html">
+                        <img src="wagon.png" alt="Wagon Detection">
+                        <h3>Wagon Detection</h3>
+                        <p>Enhance rail logistics with vision-based AI that tracks wagons in real-time, optimizing supply chain efficiency.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="number-plate-detection.html">
+                        <img src="number-plate.png" alt="Number Plate Detection">
+                        <h3>Number Plate Detection</h3>
+                        <p>Automate vehicle identification with AI-powered number plate recognition, boosting security and traffic flow.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="traffic-monitoring.html">
+                        <img src="traffic-monitoring.png" alt="Traffic Monitoring System">
+                        <h3>Traffic Monitoring System</h3>
+                        <p>Transform urban mobility with real-time AI traffic analysis, reducing congestion and enhancing safety.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="parking-space-allocation.html">
+                        <img src="parking-space.png" alt="Parking Space Allocation">
+                        <h3>Parking Space Allocation</h3>
+                        <p>Optimize parking with an AI solution that intelligently allocates spaces, saving time and reducing frustration.</p>
+                    </a>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <a href="career-path-system.html">
-                    <img src="career-path.png" alt="Career Path Recommendation">
-                    <h3>Career Path Recommendation</h3>
-                    <p>Unlock your future with an AI-driven system that analyzes skills and interests, recommending tailored courses and career trajectories.</p>
-                </a>
+            <h3 class="category-title">Healthcare</h3>
+            <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Healthcare+BG">
+                <div class="portfolio-item">
+                    <a href="cancer-prediction.html">
+                        <img src="cancer-prediction.png" alt="Cancer Prediction">
+                        <h3>Cancer Prediction</h3>
+                        <p>Empower early intervention with AI that predicts cancer risk, saving lives through proactive healthcare measures.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="brain-tumor-prediction.html">
+                        <img src="brain-tumour-prediction.png" alt="Brain Tumor Prediction">
+                        <h3>Brain Tumor Prediction</h3>
+                        <p>Harness advanced AI to analyze brain scans, delivering precise tumor predictions for life-changing treatments.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="skin-disease-prediction.html">
+                        <img src="skin-disease.png" alt="Skin Disease Prediction">
+                        <h3>Skin Disease Prediction</h3>
+                        <p>Diagnose skin conditions with AI-powered image analysis, offering rapid and accurate health insights.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="hair-diagnostic-tool.html">
+                        <img src="hair-diagnostic.png" alt="Hair Diagnostic Tool">
+                        <h3>Hair Diagnostic Tool</h3>
+                        <p>Provide personalized hair health solutions with an AI tool that analyzes scalp and hair conditions in detail.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="fall-detection.html">
+                        <img src="fall-detection.png" alt="Fall Detection">
+                        <h3>Fall Detection</h3>
+                        <p>Ensure elderly safety with real-time fall detection AI, sending instant alerts to caregivers.</p>
+                    </a>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <a href="handwritten-recognition.html">
-                    <img src="handwritten-recognition.png" alt="Handwritten Recognition">
-                    <h3>Handwritten Recognition</h3>
-                    <p>Effortlessly digitize handwritten notes with cutting-edge AI, achieving near-perfect accuracy for academic and professional use.</p>
-                </a>
+            <h3 class="category-title">Finance & Trading</h3>
+            <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Finance+BG">
+                <div class="portfolio-item">
+                    <a href="fraud-detection-system.html">
+                        <img src="fraud-detection.png" alt="Fraud Detection System" style="width:100%; border-radius:8px;">
+                        <h3>Fraud Detection System</h3>
+                        <p>Enhance security with an AI system that identifies fraudulent transactions in real-time, protecting financial institutions and customers.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="trading-suite.html">
+                        <img src="trade.png" alt="Trading Indicators Suite" style="width:100%; border-radius:8px;">
+                        <h3>Advanced Trading Suite</h3>
+                        <p>Master the markets with an AI suite that delivers real-time trading signals, predictive analytics, and risk management tools.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="credit-risk-assessment.html">
+                        <img src="credit-risk.png" alt="Credit Risk Assessment" style="width:100%; border-radius:8px;">
+                        <h3>Credit Risk Assessment</h3>
+                        <p>Optimize lending decisions with AI that analyzes creditworthiness, reducing defaults and improving loan portfolio performance.</p>
+                    </a>
+                </div>
             </div>
-        </div>
-
-        <!-- Logistics & Transportation Category -->
-        <h3 class="category-title">Logistics & Transportation</h3>
-        <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Logistics+BG">
-            <div class="portfolio-item">
-                <a href="shipping-container-ocr.html">
-                    <img src="OCR.png" alt="Shipping Container OCR">
-                    <h3>Shipping Container OCR</h3>
-                    <p>Revolutionize cargo management with AI that decodes container codes with pinpoint accuracy, streamlining global logistics.</p>
-                </a>
+            <h3 class="category-title">Retail & E-Commerce</h3>
+            <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Retail+BG">
+                <div class="portfolio-item">
+                    <a href="virtual-try-on.html">
+                        <img src="virtual-try-on.png" alt="Virtual Try-On">
+                        <h3>Virtual Try-On</h3>
+                        <p>Revolutionize online shopping with AI that lets customers virtually try on products before purchasing.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="crm.html">
+                        <img src="crm.png" alt="CRM System">
+                        <h3>CRM System</h3>
+                        <p>Enhance customer relationships with an AI-driven CRM that personalizes interactions and boosts retention.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="theft-detection.html">
+                        <img src="theft-detection-jewelry.png" alt="Theft Detection">
+                        <h3>Theft Detection</h3>
+                        <p>Protect retail environments with AI-powered theft detection, monitoring in real-time for suspicious activity across Jewelry Shops, Grocery Stores, and Supermarkets.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="sales-gpt.html">
+                        <img src="salesgpt.png" alt="Sales GPT">
+                        <h3>Sales GPT</h3>
+                        <p>Supercharge sales with an AI chatbot that engages customers and optimizes conversion rates seamlessly.</p>
+                    </a>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <a href="wagon.html">
-                    <img src="wagon.png" alt="Wagon Detection">
-                    <h3>Wagon Detection</h3>
-                    <p>Enhance rail logistics with vision-based AI that tracks wagons in real-time, optimizing supply chain efficiency.</p>
-                </a>
+            <h3 class="category-title">Security & Safety</h3>
+            <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Security+BG">
+                <div class="portfolio-item">
+                    <a href="ppe-detection.html">
+                        <img src="PPE.png" alt="PPE Detection">
+                        <h3>PPE Detection</h3>
+                        <p>Ensure workplace safety with real-time AI monitoring of personal protective equipment compliance.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="face-recognition.html">
+                        <img src="face-recognition.png" alt="Face Recognition">
+                        <h3>Face Recognition</h3>
+                        <p>Strengthen security with advanced AI face recognition, offering fast and reliable identification.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="people-count.html">
+                        <img src="people-count.png" alt="People Count">
+                        <h3>People Count</h3>
+                        <p>Optimize crowd management with an AI system that accurately tracks and analyzes foot traffic.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="emotion-recognition.html">
+                        <img src="facial-emotion.png" alt="Emotion Recognition">
+                        <h3>Emotion Recognition</h3>
+                        <p>Unlock emotional insights with AI that detects and interprets facial expressions in real-time.</p>
+                    </a>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <a href="number-plate-detection.html">
-                    <img src="number-plate.png" alt="Number Plate Detection">
-                    <h3>Number Plate Detection</h3>
-                    <p>Automate vehicle identification with AI-powered number plate recognition, boosting security and traffic flow.</p>
-                </a>
+            <h3 class="category-title">Real Estate</h3>
+            <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Real+Estate+BG">
+                <div class="portfolio-item">
+                    <a href="real-Estate.html">
+                        <img src="Real-Estate.png" alt="Real Estate">
+                        <h3>Real Estate</h3>
+                        <p>Transform property decisions with AI that provides deep insights into market trends and property values.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="property-price-prediction.html">
+                        <img src="property-price.png" alt="Property Price Prediction">
+                        <h3>Property Price Prediction</h3>
+                        <p>Empower investors with AI that forecasts property prices based on market data, location analysis, and economic trends.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="virtual-property-tour.html">
+                        <img src="virtual-tour.png" alt="Virtual Property Tour">
+                        <h3>Virtual Property Tour</h3>
+                        <p>Enhance real estate marketing with AI-generated virtual tours, offering immersive experiences for potential buyers.</p>
+                    </a>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <a href="traffic-monitoring.html">
-                    <img src="traffic-monitoring.png" alt="Traffic Monitoring System">
-                    <h3>Traffic Monitoring System</h3>
-                    <p>Transform urban mobility with real-time AI traffic analysis, reducing congestion and enhancing safety.</p>
-                </a>
+            <h3 class="category-title">Agriculture</h3>
+            <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Agriculture+BG">
+                <div class="portfolio-item">
+                    <a href="soil-health-analysis.html">
+                        <img src="soil-health.png" alt="Soil Health Analysis">
+                        <h3>Soil Health Analysis</h3>
+                        <p>Enhance crop growth with AI that analyzes soil conditions, recommending precise nutrient and irrigation strategies.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="agricultural-prediction.html">
+                        <img src="fruit.png" alt="Agricultural Prediction">
+                        <h3>Agricultural Prediction</h3>
+                        <p>Boost farming efficiency with AI that predicts crop yields, grades produce, and optimizes harvesting schedules.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="pest-detection-system.html">
+                        <img src="pest-detection.png" alt="Pest Detection System">
+                        <h3>Pest Detection System</h3>
+                        <p>Protect crops with an AI-powered system that identifies pests early, minimizing damage and reducing pesticide use.</p>
+                    </a>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <a href="parking-space-allocation.html">
-                    <img src="parking-space.png" alt="Parking Space Allocation">
-                    <h3>Parking Space Allocation</h3>
-                    <p>Optimize parking with an AI solution that intelligently allocates spaces, saving time and reducing frustration.</p>
-                </a>
+            <h3 class="category-title">Automation & Productivity</h3>
+            <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Automation+BG">
+                <div class="portfolio-item">
+                    <a href="auto-appointment.html">
+                        <img src="auto-appointment.png" alt="Auto Appointment Setting">
+                        <h3>Auto Appointment Setting</h3>
+                        <p>Streamline scheduling with an AI system that automates appointments, reducing manual effort and errors.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="document-automation.html">
+                        <img src="document-automation.png" alt="Document Automation">
+                        <h3>Document Automation</h3>
+                        <p>Simplify workflows with AI that automates document processing, extraction, and management with high accuracy.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="inventory-management.html">
+                        <img src="inventory-management.png" alt="Inventory Management">
+                        <h3>Inventory Management</h3>
+                        <p>Optimize stock levels with an AI system that predicts demand, tracks inventory, and automates reordering processes.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="robotic-bot.html">
+                        <img src="robotic.png" alt="Robotic Bot">
+                        <h3>Robotic Bot</h3>
+                        <p>Enhance productivity with a robotic AI bot designed for precision tasks across various industries.</p>
+                    </a>
+                </div>
             </div>
-        </div>
-
-        <!-- Healthcare Category -->
-        <h3 class="category-title">Healthcare</h3>
-        <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Healthcare+BG">
-            <div class="portfolio-item">
-                <a href="cancer-prediction.html">
-                    <img src="cancer-prediction.png" alt="Cancer Prediction">
-                    <h3>Cancer Prediction</h3>
-                    <p>Empower early intervention with AI that predicts cancer risk, saving lives through proactive healthcare measures.</p>
-                </a>
+            <h3 class="category-title">Creative & Media</h3>
+            <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Creative+BG">
+                <div class="portfolio-item">
+                    <a href="media-avatar.html">
+                        <img src="media-avatar.png" alt="AI-Powered Media Human Avatar">
+                        <h3>AI-Powered Media Human Avatar</h3>
+                        <p>Revolutionize media with an AI avatar that anchors news, teaches, and interviews with human-like finesse, available 24/7 for your audience.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="text-to-image.html">
+                        <img src="text-to-image.png" alt="Text to Image">
+                        <h3>Text to Image</h3>
+                        <p>Turn your ideas into visuals with an AI tool that generates stunning images from text descriptions.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="image-to-video.html">
+                        <img src="image-to-video.png" alt="Image to Video">
+                        <h3>Image to Video</h3>
+                        <p>Create captivating videos from static images using advanced AI-driven animation technology.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="text-and-speech.html">
+                        <img src="text-and-speech.png" alt="Text and Speech">
+                        <h3>Text and Speech</h3>
+                        <p>Bring text to life with an AI system that converts written content into natural, expressive speech.</p>
+                    </a>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <a href="brain-tumor-prediction.html">
-                    <img src="brain-tumour-prediction.png" alt="Brain Tumor Prediction">
-                    <h3>Brain Tumor Prediction</h3>
-                    <p>Harness advanced AI to analyze brain scans, delivering precise tumor predictions for life-changing treatments.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="skin-disease-prediction.html">
-                    <img src="skin-disease.png" alt="Skin Disease Prediction">
-                    <h3>Skin Disease Prediction</h3>
-                    <p>Diagnose skin conditions with AI-powered image analysis, offering rapid and accurate health insights.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="hair-diagnostic-tool.html">
-                    <img src="hair-diagnostic.png" alt="Hair Diagnostic Tool">
-                    <h3>Hair Diagnostic Tool</h3>
-                    <p>Provide personalized hair health solutions with an AI tool that analyzes scalp and hair conditions in detail.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="fall-detection.html">
-                    <img src="fall-detection.png" alt="Fall Detection">
-                    <h3>Fall Detection</h3>
-                    <p>Ensure elderly safety with real-time fall detection AI, sending instant alerts to caregivers.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Finance & Trading Category -->
-        <h3 class="category-title">Finance & Trading</h3>
-        <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Finance+BG">
-            <div class="portfolio-item">
-                <a href="fraud-detection-system.html">
-                    <img src="fraud-detection.png" alt="Fraud Detection System" style="width:100%; border-radius:8px;">
-                    <h3>Fraud Detection System</h3>
-                    <p>Enhance security with an AI system that identifies fraudulent transactions in real-time, protecting financial institutions and customers.</p>
-                </a>
-            </div>
-
-            <div class="portfolio-item">
-                <a href="trading-suite.html">
-                    <img src="trade.png" alt="Trading Indicators Suite" style="width:100%; border-radius:8px;">
-                    <h3>Advanced Trading Suite</h3>
-                    <p>Master the markets with an AI suite that delivers real-time trading signals, predictive analytics, and risk management tools.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="credit-risk-assessment.html">
-                    <img src="credit-risk.png" alt="Credit Risk Assessment" style="width:100%; border-radius:8px;">
-                    <h3>Credit Risk Assessment</h3>
-                    <p>Optimize lending decisions with AI that analyzes creditworthiness, reducing defaults and improving loan portfolio performance.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Retail & E-Commerce Category -->
-        <h3 class="category-title">Retail & E-Commerce</h3>
-        <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Retail+BG">
-            <div class="portfolio-item">
-                <a href="virtual-try-on.html">
-                    <img src="virtual-try-on.png" alt="Virtual Try-On">
-                    <h3>Virtual Try-On</h3>
-                    <p>Revolutionize online shopping with AI that lets customers virtually try on products before purchasing.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="crm.html">
-                    <img src="crm.png" alt="CRM System">
-                    <h3>CRM System</h3>
-                    <p>Enhance customer relationships with an AI-driven CRM that personalizes interactions and boosts retention.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="theft-detection.html">
-                    <img src="theft-detection-jewelry.png" alt="Theft Detection">
-                    <h3>Theft Detection</h3>
-                    <p>Protect retail environments with AI-powered theft detection, monitoring in real-time for suspicious activity across Jewelry Shops, Grocery Stores, and Supermarkets.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="sales-gpt.html">
-                    <img src="salesgpt.png" alt="Sales GPT">
-                    <h3>Sales GPT</h3>
-                    <p>Supercharge sales with an AI chatbot that engages customers and optimizes conversion rates seamlessly.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Security & Safety Category -->
-        <h3 class="category-title">Security & Safety</h3>
-        <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Security+BG">
-            <div class="portfolio-item">
-                <a href="ppe-detection.html">
-                    <img src="PPE.png" alt="PPE Detection">
-                    <h3>PPE Detection</h3>
-                    <p>Ensure workplace safety with real-time AI monitoring of personal protective equipment compliance.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="face-recognition.html">
-                    <img src="face-recognition.png" alt="Face Recognition">
-                    <h3>Face Recognition</h3>
-                    <p>Strengthen security with advanced AI face recognition, offering fast and reliable identification.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="people-count.html">
-                    <img src="people-count.png" alt="People Count">
-                    <h3>People Count</h3>
-                    <p>Optimize crowd management with an AI system that accurately tracks and analyzes foot traffic.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="emotion-recognition.html">
-                    <img src="facial-emotion.png" alt="Emotion Recognition">
-                    <h3>Emotion Recognition</h3>
-                    <p>Unlock emotional insights with AI that detects and interprets facial expressions in real-time.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Real Estate Category -->
-        <h3 class="category-title">Real Estate</h3>
-        <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Real+Estate+BG">
-            <div class="portfolio-item">
-                <a href="real-Estate.html">
-                    <img src="Real-Estate.png" alt="Real Estate">
-                    <h3>Real Estate</h3>
-                    <p>Transform property decisions with AI that provides deep insights into market trends and property values.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="property-price-prediction.html">
-                    <img src="property-price.png" alt="Property Price Prediction">
-                    <h3>Property Price Prediction</h3>
-                    <p>Empower investors with AI that forecasts property prices based on market data, location analysis, and economic trends.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="virtual-property-tour.html">
-                    <img src="virtual-tour.png" alt="Virtual Property Tour">
-                    <h3>Virtual Property Tour</h3>
-                    <p>Enhance real estate marketing with AI-generated virtual tours, offering immersive experiences for potential buyers.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Agriculture Category -->
-        <h3 class="category-title">Agriculture</h3>
-        <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Agriculture+BG">
-            <div class="portfolio-item">
-                <a href="soil-health-analysis.html">
-                    <img src="soil-health.png" alt="Soil Health Analysis">
-                    <h3>Soil Health Analysis</h3>
-                    <p>Enhance crop growth with AI that analyzes soil conditions, recommending precise nutrient and irrigation strategies.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="agricultural-prediction.html">
-                    <img src="fruit.png" alt="Agricultural Prediction">
-                    <h3>Agricultural Prediction</h3>
-                    <p>Boost farming efficiency with AI that predicts crop yields, grades produce, and optimizes harvesting schedules.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="pest-detection-system.html">
-                    <img src="pest-detection.png" alt="Pest Detection System">
-                    <h3>Pest Detection System</h3>
-                    <p>Protect crops with an AI-powered system that identifies pests early, minimizing damage and reducing pesticide use.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Automation & Productivity Category -->
-        <h3 class="category-title">Automation & Productivity</h3>
-        <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Automation+BG">
-            <div class="portfolio-item">
-                <a href="auto-appointment.html">
-                    <img src="auto-appointment.png" alt="Auto Appointment Setting">
-                    <h3>Auto Appointment Setting</h3>
-                    <p>Streamline scheduling with an AI system that automates appointments, reducing manual effort and errors.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="document-automation.html">
-                    <img src="document-automation.png" alt="Document Automation">
-                    <h3>Document Automation</h3>
-                    <p>Simplify workflows with AI that automates document processing, extraction, and management with high accuracy.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="inventory-management.html">
-                    <img src="inventory-management.png" alt="Inventory Management">
-                    <h3>Inventory Management</h3>
-                    <p>Optimize stock levels with an AI system that predicts demand, tracks inventory, and automates reordering processes.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="robotic-bot.html">
-                    <img src="robotic.png" alt="Robotic Bot">
-                    <h3>Robotic Bot</h3>
-                    <p>Enhance productivity with a robotic AI bot designed for precision tasks across various industries.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Creative & Media Category -->
-        <h3 class="category-title">Creative & Media</h3>
-        <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Creative+BG">
-            <div class="portfolio-item">
-                <a href="media-avatar.html">
-                    <img src="media-avatar.png" alt="AI-Powered Media Human Avatar">
-                    <h3>AI-Powered Media Human Avatar</h3>
-                    <p>Revolutionize media with an AI avatar that anchors news, teaches, and interviews with human-like finesse, available 24/7 for your audience.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="text-to-image.html">
-                    <img src="text-to-image.png" alt="Text to Image">
-                    <h3>Text to Image</h3>
-                    <p>Turn your ideas into visuals with an AI tool that generates stunning images from text descriptions.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="image-to-video.html">
-                    <img src="image-to-video.png" alt="Image to Video">
-                    <h3>Image to Video</h3>
-                    <p>Create captivating videos from static images using advanced AI-driven animation technology.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="text-and-speech.html">
-                    <img src="text-and-speech.png" alt="Text and Speech">
-                    <h3>Text and Speech</h3>
-                    <p>Bring text to life with an AI system that converts written content into natural, expressive speech.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Cross-Industry Solutions Category -->
-        <h3 class="category-title">Cross-Industry Solutions</h3>
-        <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Cross+Industry+BG">
-            <div class="portfolio-item">
-                <a href="agentic-ai-hub.html">
-                    <img src="agentic-ai.png" alt="Agentic AI Hub">
-                    <h3>Agentic AI Hub</h3>
-                    <p>Empower multi-sector innovation with autonomous AI agents that adapt and execute tasks with precision.</p>
-                </a>
-            </div>
-            <div class="portfolio-item">
-                <a href="driving-license-ocr.html">
-                    <img src="driving-license.png" alt="Driving License Extraction">
-                    <h3>Driving License Extraction</h3>
-                    <p>Automate identity verification with AI that extracts and processes driving license data effortlessly.</p>
-                </a>
-            </div>  
-            <div class="portfolio-item">
-                <a href="supply-chain-optimizer.html">
-                    <img src="supply-chain.png" alt="Supply Chain Optimizer">
-                    <h3>Supply Chain Optimizer</h3>
-                    <p>Revolutionize logistics with an AI system that optimizes supply chains across industries with real-time insights.</p>
-                </a>
+            <h3 class="category-title">Cross-Industry Solutions</h3>
+            <div class="portfolio-grid" data-bg="https://via.placeholder.com/1200x600?text=Cross+Industry+BG">
+                <div class="portfolio-item">
+                    <a href="agentic-ai-hub.html">
+                        <img src="agentic-ai.png" alt="Agentic AI Hub">
+                        <h3>Agentic AI Hub</h3>
+                        <p>Empower multi-sector innovation with autonomous AI agents that adapt and execute tasks with precision.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="driving-license-ocr.html">
+                        <img src="driving-license.png" alt="Driving License Extraction">
+                        <h3>Driving License Extraction</h3>
+                        <p>Automate identity verification with AI that extracts and processes driving license data effortlessly.</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="supply-chain-optimizer.html">
+                        <img src="supply-chain.png" alt="Supply Chain Optimizer">
+                        <h3>Supply Chain Optimizer</h3>
+                        <p>Revolutionize logistics with an AI system that optimizes supply chains across industries with real-time insights.</p>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <div class="container">
-        <p>© 2025 Adapt AI. All rights reserved.</p>
-    </div>
-</footer>
-
-<div class="chatbot-container">
-    <div class="chatbot-header">
-        <h3>ADPTAI Assistant</h3>
-        <span class="chatbot-close">×</span>
-    </div>
-    <div class="chatbot-body">
-        <div class="chatbot-section">
-            <h4>Project Description</h4>
-            <p>At ADPTAI, we specialize in innovative AI solutions, delivering cutting-edge projects in automation, machine learning, and data analytics. <a href="portfolio.html" target="_blank">Explore our portfolio</a> to see how we transform ideas into impactful technologies.</p>
+    <footer>
+        <div class="container">
+            <p>© 2025 Adapt AI. All rights reserved.</p>
         </div>
-        <div class="chatbot-section">
-            <h4>Contact Us</h4>
-            <p>Email: <a href="mailto:info@adptai.in">info@adptai.in</a><br>Phone: <a href="tel:+918148347491">+91-8148347491</a><br><a href="https://wa.me/+918148347491" target="_blank">Send us a message</a></p>
+    </footer>
+
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <h3>ADPTAI AI Assistant</h3>
+            <span class="chatbot-close" id="chatbot-close">×</span>
+        </div>
+        <div class="chatbot-body">
+            <div class="chatbot-message">
+                <p>Welcome! How can I assist you today? Select an option:</p>
+                <div class="chatbot-buttons">
+                    <button class="chatbot-btn" data-info="contact">Contact Us</button>
+                    <button class="chatbot-btn" data-info="projects">View Projects</button>
+                </div>
+            </div>
+            <div class="chatbot-response" id="chatbot-response">
+                <!-- Dynamic responses will appear here -->
+            </div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" placeholder="Ask me anything..." id="chatbot-input">
+            <button id="chatbot-send">Send</button>
         </div>
     </div>
-    <div class="chatbot-footer">
-        <input type="text" placeholder="Type a message..." disabled>
-        <button>Send</button>
+    <div class="chatbot-toggle" id="chatbot-toggle">
+        <i class="fas fa-robot"></i>
     </div>
-</div>
-<div class="chatbot-toggle">Chatbot</div>
 
-<style>
-    /* Global Styles */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Roboto', sans-serif;
-        background: linear-gradient(135deg, #1e2a44, #2e4a6e);
-        color: #fff;
-        line-height: 1.6;
-    }
-
-    .container {
-        max-width: 1300px;
-        margin: 0 auto;
-        padding: 0 20px;
-        position: relative;
-    }
-
-    /* Portfolio Section Styling */
-    #portfolio {
-        padding: 80px 20px;
-        background: linear-gradient(135deg, #1e2a44, #2e4a6e);
-        position: relative;
-        overflow: hidden;
-    }
-
-    .portfolio-title {
-        font-family: 'Orbitron', sans-serif; /* Futuristic font */
-        font-size: 3em;
-        text-align: center;
-        color: #97720d;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        margin-bottom: 20px;
-        font-weight: 400;
-        animation: fadeInUp 1.5s ease-out;
-        text-shadow: 0 0 20px #2e72b1, 0 0 30px rgba(78, 205, 196, 0.7);
-        position: relative;
-        z-index: 2;
-    }
-
-    .portfolio-subtitle {
-        font-size: 1.4em;
-        text-align: center;
-        color: #a3bffa;
-        margin-bottom: 50px;
-        font-weight: 400;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-        animation: fadeInUp 2s ease-out 0.5s;
-        line-height: 1.8;
-        text-shadow: 0 0 5px rgba(163, 191, 250, 0.5);
-    }
-
-    .category-title {
-        font-size: 2.2em;
-        color: #cb731c;
-        margin-top: 60px;
-        margin-bottom: 30px;
-        text-align: center;
-        font-weight: 600;
-        position: relative;
-        animation: slideInLeft 1s ease-out;
-        text-shadow: 0 0 5px rgba(69, 183, 209, 0.7);
-    }
-
-    .category-title::after {
-        content: '';
-        position: absolute;
-        width: 60px;
-        height: 3px;
-        background: #45b7d1;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 2px;
-        box-shadow: 0 0 10px #45b7d1;
-    }
-
-    .portfolio-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
-        padding: 30px;
-        background: rgba(0, 0, 0, 0.3);
-        border-radius: 15px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-        position: relative;
-        overflow: hidden;
-        transition: transform 0.3s ease;
-    }
-
-    .portfolio-grid::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, rgba(30, 42, 68, 0.8), transparent);
-        z-index: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    .portfolio-grid:hover::before {
-        opacity: 0.1;
-    }
-
-    .portfolio-item {
-        background: linear-gradient(135deg, #2c3e50, #34495e);
-        border-radius: 12px;
-        overflow: hidden;
-        transition: all 0.4s ease;
-        text-align: center;
-        padding: 20px;
-        border: 1px solid rgba(69, 183, 209, 0.1);
-        position: relative;
-        z-index: 1;
-        transform: scale(1);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .portfolio-item a {
-        text-decoration: none;
-        color: #fff;
-        display: block;
-    }
-
-    .portfolio-item img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        border-radius: 8px;
-        transition: transform 0.4s ease, filter 0.4s ease;
-        filter: brightness(0.9);
-    }
-
-    .portfolio-item h3 {
-        font-size: 1.5em;
-        margin: 15px 0;
-        color: #4ecdc4;
-        font-weight: 500;
-        transition: color 0.3s ease;
-        text-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
-    }
-
-    .portfolio-item p {
-        font-size: 1em;
-        color: #a3bffa;
-        padding: 0 10px;
-        line-height: 1.6;
-        transition: color 0.3s ease;
-    }
-
-    .portfolio-item:hover {
-        background: linear-gradient(135deg, #34495e, #2c3e50);
-        transform: scale(1.05) rotate(1deg);
-        box-shadow: 0 10px 30px rgba(78, 205, 196, 0.5);
-    }
-
-    .portfolio-item:hover img {
-        transform: scale(1.1);
-        filter: brightness(1.1);
-    }
-
-    .portfolio-item:hover h3 {
-        color: #a3bffa;
-        text-shadow: 0 0 10px #a3bffa;
-    }
-
-    .portfolio-item:hover p {
-        color: #fff;
-    }
-
-    /* Parallax and Interactive Background */
-    .portfolio-grid {
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-    }
-
-    /* Animations */
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(50px);
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
 
-    @keyframes slideInLeft {
-        from {
-            opacity: 0;
-            transform: translateX(-100px);
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e2a44, #2e4a6e);
+            color: #fff;
+            line-height: 1.6;
         }
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
 
-    @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.05); }
-        100% { transform: scale(1); }
-    }
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+        }
 
-    /* Responsive Design */
-    @media (max-width: 1024px) {
-        .portfolio-grid {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* Hero Section Styling */
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #1e2a44, #2e4a6e);
+            position: relative;
+            overflow: hidden;
         }
-        .portfolio-item img {
-            height: 180px;
-        }
-    }
 
-    @media (max-width: 768px) {
-        .portfolio-grid {
-            grid-template-columns: 1fr;
-        }
-        .portfolio-item img {
-            height: 150px;
-        }
-        .portfolio-title {
+        .hero h2 {
+            font-family: 'Orbitron', sans-serif;
             font-size: 2.8em;
+            color: #97720d;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(78, 205, 196, 0.7);
+            animation: fadeInUp 1s ease-out;
         }
-        .portfolio-subtitle {
+
+        .hero p {
+            font-size: 1.2em;
+            color: #a3bffa;
+            margin-bottom: 30px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .intro-video-container {
+            width: 60%;
+            margin: 30px auto;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 2px solid #e07a26;
+            animation: neonGlow 2s ease-in-out infinite alternate;
+        }
+
+        .video-wrapper {
+            position: relative;
+        }
+
+        .intro-video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: filter 0.3s ease;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(30, 42, 68, 0.3), rgba(78, 205, 196, 0.1));
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .intro-video-container:hover .video-overlay {
+            opacity: 0.5;
+        }
+
+        .video-control-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #e07a26;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .video-control-btn:hover {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .video-control-btn .fas {
             font-size: 1.2em;
         }
-        .category-title {
-            font-size: 1.8em;
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #e07a26;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(224, 122, 38, 0.3);
+            animation: fadeInUp 1.4s ease-out;
         }
-    }
 
-    /* Neon Glow Effect on Hover */
-    .portfolio-item::before {
-        content: '';
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        right: -2px;
-        bottom: -2px;
-        background: linear-gradient(45deg, #4ecdc4, #45b7d1, #a3bffa);
-        z-index: -1;
-        border-radius: 12px;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
+        .btn:hover {
+            background: #ff9800;
+            transform: scale(1.05);
+        }
 
-    .portfolio-item:hover::before {
-        opacity: 0.3;
-    }
-</style>
+        /* Portfolio Section Styling */
+        #portfolio {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1e2a44, #2e4a6e);
+            position: relative;
+            overflow: hidden;
+        }
 
-<script>
-    // Dynamic Background and Parallax Effect
-    const portfolioGrids = document.querySelectorAll('.portfolio-grid');
-    portfolioGrids.forEach(grid => {
-        const bgUrl = grid.getAttribute('data-bg') || 'https://via.placeholder.com/1200x600';
-        grid.style.backgroundImage = `url(${bgUrl})`;
+        .portfolio-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3em;
+            text-align: center;
+            color: #97720d;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            font-weight: 400;
+            animation: fadeInUp 1.5s ease-out;
+            text-shadow: 0 0 20px #2e72b1, 0 0 30px rgba(78, 205, 196, 0.7);
+            position: relative;
+            z-index: 2;
+        }
 
-        grid.addEventListener('mousemove', (e) => {
-            const rect = grid.getBoundingClientRect();
-            const mouseX = e.clientX - rect.left;
-            const mouseY = e.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const moveX = (mouseX - centerX) * 0.02;
-            const moveY = (mouseY - centerY) * 0.02;
-            grid.style.backgroundPosition = `${50 + moveX}% ${50 + moveY}%`;
-            grid.style.transform = `scale(1.01)`;
-        });
+        .portfolio-subtitle {
+            font-size: 1.4em;
+            text-align: center;
+            color: #a3bffa;
+            margin-bottom: 50px;
+            font-weight: 400;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 2s ease-out 0.5s;
+            line-height: 1.8;
+            text-shadow: 0 0 5px rgba(163, 191, 250, 0.5);
+        }
 
-        grid.addEventListener('mouseleave', () => {
-            grid.style.transform = `scale(1)`;
-            grid.style.backgroundPosition = `center`;
-        });
-    });
+        .category-title {
+            font-size: 2.2em;
+            color: #cb731c;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 600;
+            position: relative;
+            animation: slideInLeft 1s ease-out;
+            text-shadow: 0 0 5px rgba(69, 183, 209, 0.7);
+        }
 
-    // Add Pulse Animation to Items on Load
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-    portfolioItems.forEach(item => {
-        item.addEventListener('mouseenter', () => {
-            item.style.animation = 'pulse 1.5s infinite';
-        });
-        item.addEventListener('mouseleave', () => {
-            item.style.animation = 'none';
-        });
-    });
-</script>
+        .category-title::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: #45b7d1;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+            box-shadow: 0 0 10px #45b7d1;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
 
-<!-- Chatbot Container -->
-<div class="chatbot-container" id="chatbot-container">
-    <div class="chatbot-header">
-        <h3>ADPTAI AI Assistant</h3>
-        <span class="chatbot-close" id="chatbot-close">×</span>
-    </div>
-    <div class="chatbot-body">
-        <div class="chatbot-message">
-            <p>Welcome! How can I assist you today? Select an option:</p>
-            <div class="chatbot-buttons">
-                <button class="chatbot-btn" data-info="contact">Contact Us</button>
-                <button class="chatbot-btn" data-info="projects">View Projects</button>
-            </div>
-        </div>
-        <div class="chatbot-response" id="chatbot-response">
-            <!-- Dynamic responses will appear here -->
-        </div>
-    </div>
-    <div class="chatbot-footer">
-        <input type="text" placeholder="Ask me anything..." id="chatbot-input">
-        <button id="chatbot-send">Send</button>
-    </div>
-</div>
-<div class="chatbot-toggle" id="chatbot-toggle">
-    <i class="fas fa-robot"></i>
-</div>
+        .portfolio-grid::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(30, 42, 68, 0.8), transparent);
+            z-index: 0;
+            transition: opacity 0.5s ease;
+        }
 
-<!-- Chatbot Styles -->
-<style>
-    /* Chatbot Styles */
-    .chatbot-container {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 400px;
-        max-height: 500px;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        display: none;
-        z-index: 1000;
-        overflow: hidden;
-        border: 2px solid #e07a26; /* Consistent orange border */
-        animation: slideUp 0.5s ease-out;
-    }
+        .portfolio-grid:hover::before {
+            opacity: 0.1;
+        }
 
-    .chatbot-header {
-        background: #1e3a5f; /* Single blue color */
-        color: #fff;
-        padding: 10px 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #e07a26;
-    }
+        .portfolio-item {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid rgba(69, 183, 209, 0.1);
+            position: relative;
+            z-index: 1;
+            transform: scale(1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
 
-    .chatbot-header h3 {
-        margin: 0;
-        font-size: 0.95em; /* Reduced further */
-        font-weight: 600;
-        text-shadow: 0 0 5px #e07a26;
-    }
+        .portfolio-item a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
 
-    .chatbot-close {
-        cursor: pointer;
-        font-size: 1.2em; /* Reduced further */
-        color: #fff;
-        transition: color 0.3s ease;
-    }
+        .portfolio-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.4s ease, filter 0.4s ease;
+            filter: brightness(0.9);
+        }
 
-    .chatbot-close:hover {
-        color: #ff9800;
-        text-shadow: 0 0 5px #ff9800;
-    }
+        .portfolio-item h3 {
+            font-size: 1.5em;
+            margin: 15px 0;
+            color: #4ecdc4;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            text-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
+        }
 
-    .chatbot-body {
-        padding: 12px;
-        max-height: 350px;
-        overflow-y: auto;
-        background: #1c2f4a; /* Single darker blue */
-        color: #a3bffa;
-        font-size: 0.85em; /* Reduced further */
-        scrollbar-width: thin;
-        scrollbar-color: #e07a26 #1c2f4a;
-    }
+        .portfolio-item p {
+            font-size: 1em;
+            color: #a3bffa;
+            padding: 0 10px;
+            line-height: 1.6;
+            transition: color 0.3s ease;
+        }
 
-    .chatbot-body::-webkit-scrollbar {
-        width: 5px;
-    }
+        .portfolio-item:hover {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0 10px 30px rgba(78, 205, 196, 0.5);
+        }
 
-    .chatbot-body::-webkit-scrollbar-thumb {
-        background-color: #e07a26;
-        border-radius: 2px;
-    }
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
 
-    .chatbot-message p {
-        margin: 0 0 10px;
-        color: #fff;
-        font-size: 0.9em; /* Reduced further */
-        font-weight: 400;
-    }
+        .portfolio-item:hover h3 {
+            color: #a3bffa;
+            text-shadow: 0 0 10px #a3bffa;
+        }
 
-    .chatbot-buttons {
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-        margin-top: 8px;
-    }
+        .portfolio-item:hover p {
+            color: #fff;
+        }
 
-    .chatbot-btn {
-        background: #e07a26; /* Single orange color */
-        color: #fff;
-        border: none;
-        padding: 6px 15px; /* Reduced padding */
-        border-radius: 15px;
-        cursor: pointer;
-        font-size: 0.85em; /* Reduced further */
-        transition: background 0.3s ease, transform 0.3s ease;
-        box-shadow: 0 6px 1px rgba(224, 122, 38, 0.3);
-    }
+        .portfolio-grid {
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
 
-    .chatbot-btn:hover {
-        background: #ff9800;
-        transform: scale(1.05);
-        box-shadow: 0 5px 15px rgba(255, 152, 0, 0.5);
-    }
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-    .chatbot-response {
-        margin-top: 10px;
-        color: #fff;
-        font-size: 0.85em; /* Reduced further */
-        line-height: 1.5;
-    }
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
-    .chatbot-response a {
-        color: #4ecdc4;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
 
-    .chatbot-response a:hover {
-        color: #ff9800;
-        text-shadow: 0 0 5px #ff9800;
-    }
+        @keyframes neonGlow {
+            0% {
+                box-shadow: 0 0 10px #e07a26, 0 0 20px rgba(224, 122, 38, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 15px #ff9800, 0 0 30px rgba(255, 152, 0, 0.7);
+            }
+        }
 
-    .chatbot-response ul {
-        list-style: none;
-        padding-left: 15px;
-    }
+        /* Chatbot Styles */
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 400px;
+            max-height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 1000;
+            overflow: hidden;
+            border: 2px solid #e07a26;
+            animation: slideUp 0.5s ease-out;
+        }
 
-    .chatbot-response ul li {
-        position: relative;
-        margin-bottom: 6px; /* Reduced margin */
-    }
+        .chatbot-header {
+            background: #1e3a5f;
+            color: #fff;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e07a26;
+        }
 
-    .chatbot-response ul li:before {
-        content: "•";
-        color: #e07a26;
-        font-size: 0.9em;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-    }
+        .chatbot-header h3 {
+            margin: 0;
+            font-size: 0.95em;
+            font-weight: 600;
+            text-shadow: 0 0 5px #e07a26;
+        }
 
-    .chatbot-footer {
-        display: none; /* Hide the input section */
-    }
+        .chatbot-close {
+            cursor: pointer;
+            font-size: 1.2em;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
 
-    .chatbot-toggle {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: #1e3a5f;
-        color: #fff;
-        width: 60px;
-        height: 50px;
-        border-radius: 50%;
-        cursor: pointer;
-        z-index: 1001;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4), 0 0 8px #e07a26;
-        animation: pulse 4s infinite;
-        transition: transform 0.3s ease;
-    }
+        .chatbot-close:hover {
+            color: #ff9800;
+            text-shadow: 0 0 5px #ff9800;
+        }
 
-    .chatbot-toggle:hover {
-        transform: scale(1.2);
-        box-shadow: 0 7px 20px rgba(0, 0, 0, 0.6), 0 0 10px #ff9800;
-    }
+        .chatbot-body {
+            padding: 12px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: #1c2f4a;
+            color: #a3bffa;
+            font-size: 0.85em;
+            scrollbar-width: thin;
+            scrollbar-color: #e07a26 #1c2f4a;
+        }
 
-    .chatbot-toggle .fas {
-        font-size: 1.1em; /* Reduced further */
-    }
+        .chatbot-body::-webkit-scrollbar {
+            width: 5px;
+        }
 
-    /* Animations */
-    @keyframes slideUp {
-        from { opacity: 0; transform: translateY(50px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
+        .chatbot-body::-webkit-scrollbar-thumb {
+            background-color: #e07a26;
+            border-radius: 2px;
+        }
 
-    @keyframes pulse {
-        0% { transform: scale(1); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); }
-        50% { transform: scale(1.05); box-shadow: 0 7px 20px rgba(0, 0, 0, 0.6); }
-        100% { transform: scale(1); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); }
-    }
-</style>
+        .chatbot-message p {
+            margin: 0 0 10px;
+            color: #fff;
+            font-size: 0.9em;
+            font-weight: 400;
+        }
 
-<!-- Chatbot JavaScript -->
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const chatbotToggle = document.getElementById('chatbot-toggle');
-        const chatbotContainer = document.getElementById('chatbot-container');
-        const chatbotClose = document.getElementById('chatbot-close');
-        const chatbotBtn = document.querySelectorAll('.chatbot-btn');
-        const chatbotResponse = document.getElementById('chatbot-response');
-        const chatbotInput = document.getElementById('chatbot-input');
-        const chatbotSend = document.getElementById('chatbot-send');
+        .chatbot-buttons {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
 
-        // Toggle chatbot visibility
-        chatbotToggle.addEventListener('click', () => {
-            chatbotContainer.style.display = 'block';
-            chatbotToggle.style.display = 'none';
-        });
+        .chatbot-btn {
+            background: #e07a26;
+            color: #fff;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 6px 1px rgba(224, 122, 38, 0.3);
+        }
 
-        chatbotClose.addEventListener('click', () => {
-            chatbotContainer.style.display = 'none';
-            chatbotToggle.style.display = 'block';
-        });
+        .chatbot-btn:hover {
+            background: #ff9800;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 152, 0, 0.5);
+        }
 
-        // Handle button clicks for different info types
-        chatbotBtn.forEach(button => {
-            button.addEventListener('click', () => {
-                const infoType = button.getAttribute('data-info');
-                let response = '';
+        .chatbot-response {
+            margin-top: 10px;
+            color: #fff;
+            font-size: 0.85em;
+            line-height: 1.5;
+        }
 
-                if (infoType === 'contact') {
-                    response = `
-                        <h4>Contact Information:</h4>
-                        <p><strong>Email:</strong> <a href="mailto:info@adptai.in">info@adptai.in</a></p>
-                        <p><strong>Website:</strong> <a href="https://adptai.in" target="_blank">adptai.in</a></p>
-                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/+918148347491" target="_blank">+91-8148347491</a></p>
-                    `;
-                } else if (infoType === 'projects') {
-                    response = `
-                        <h4>Our Projects:</h4>
-                        <ul>
-                            <li><strong>Healthcare:</strong> Cancer Prediction and Brain Tumor Detection.</li>
-                            <li><strong>Education:</strong> Intelligent Tutoring Chatbot and Handwritten Recognition.</li>
-                            <li><strong>Logistics:</strong> Shipping Container OCR and Traffic Monitoring.</li>
-                            <li><strong>Finance:</strong> Fraud Detection System and Trading Suite.</li>
-                            <li><strong>Creative:</strong> Text-to-Image and Image-to-Video.</li>
-                            <li>Explore more <a href="portfolio.html" target="_blank">here</a>.</li>
-                        </ul>
-                    `;
-                }
+        .chatbot-response a {
+            color: #4ecdc4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-                chatbotResponse.innerHTML = response;
-                chatbotResponse.scrollTop = chatbotResponse.scrollHeight; // Auto-scroll
+        .chatbot-response a:hover {
+            color: #ff9800;
+            text-shadow: 0 0 5px #ff9800;
+        }
+
+        .chatbot-response ul {
+            list-style: none;
+            padding-left: 15px;
+        }
+
+        .chatbot-response ul li {
+            position: relative;
+            margin-bottom: 6px;
+        }
+
+        .chatbot-response ul li:before {
+            content: "•";
+            color: #e07a26;
+            font-size: 0.9em;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .chatbot-footer {
+            display: flex;
+            padding: 10px;
+            background: #1e3a5f;
+            border-top: 1px solid #e07a26;
+        }
+
+        .chatbot-footer input {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 15px;
+            margin-right: 10px;
+            font-size: 0.85em;
+            outline: none;
+        }
+
+        .chatbot-footer button {
+            background: #e07a26;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: background 0.3s ease;
+        }
+
+        .chatbot-footer button:hover {
+            background: #ff9800;
+        }
+
+        .chatbot-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #1e3a5f;
+            color: #fff;
+            width: 60px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4), 0 0 8px #e07a26;
+            animation: pulse 4s infinite;
+            transition: transform 0.3s ease;
+        }
+
+        .chatbot-toggle:hover {
+            transform: scale(1.2);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.6), 0 0 10px #ff9800;
+        }
+
+        .chatbot-toggle .fas {
+            font-size: 1.1em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+            .portfolio-item img {
+                height: 180px;
+            }
+            .intro-video-container {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            .portfolio-item img {
+                height: 150px;
+            }
+            .portfolio-title {
+                font-size: 2.8em;
+            }
+            .portfolio-subtitle {
+                font-size: 1.2em;
+            }
+            .category-title {
+                font-size: 1.8em;
+            }
+            .intro-video-container {
+                width: 90%;
+            }
+            .hero h2 {
+                font-size: 2.2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            .chatbot-container {
+                width: 90%;
+                right: 5%;
+            }
+            .video-control-btn {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        /* Neon Glow Effect on Hover */
+        .portfolio-item::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #4ecdc4, #45b7d1, #a3bffa);
+            z-index: -1;
+            border-radius: 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover::before {
+            opacity: 0.3;
+        }
+    </style>
+
+    <script>
+        // Dynamic Background and Parallax Effect
+        const portfolioGrids = document.querySelectorAll('.portfolio-grid');
+        portfolioGrids.forEach(grid => {
+            const bgUrl = grid.getAttribute('data-bg') || 'https://via.placeholder.com/1200x600';
+            grid.style.backgroundImage = `url(${bgUrl})`;
+
+            grid.addEventListener('mousemove', (e) => {
+                const rect = grid.getBoundingClientRect();
+                const mouseX = e.clientX - rect.left;
+                const mouseY = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const moveX = (mouseX - centerX) * 0.02;
+                const moveY = (mouseY - centerY) * 0.02;
+                grid.style.backgroundPosition = `${50 + moveX}% ${50 + moveY}%`;
+                grid.style.transform = `scale(1.01)`;
+            });
+
+            grid.addEventListener('mouseleave', () => {
+                grid.style.transform = `scale(1)`;
+                grid.style.backgroundPosition = `center`;
             });
         });
 
-        // Handle input and send button
-        chatbotSend.addEventListener('click', () => {
-            const message = chatbotInput.value.trim().toLowerCase();
-            if (message) {
-                if (message.includes('contact')) {
-                    chatbotBtn[0].click();
-                } else if (message.includes('project')) {
-                    chatbotBtn[1].click();
-                } else {
-                    chatbotResponse.innerHTML += `<p>User: ${chatbotInput.value}</p><p>ADPTAI: Please try 'contact' or 'project'!</p>`;
-                    chatbotResponse.scrollTop = chatbotResponse.scrollHeight;
-                }
-                chatbotInput.value = '';
-            }
+        // Add Pulse Animation to Items on Load
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        portfolioItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.style.animation = 'pulse 1.5s infinite';
+            });
+            item.addEventListener('mouseleave', () => {
+                item.style.animation = 'none';
+            });
         });
 
-        chatbotInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') chatbotSend.click();
+        // Video Control Script
+        document.addEventListener('DOMContentLoaded', () => {
+            const video = document.querySelector('.intro-video');
+            const controlBtn = document.getElementById('video-control');
+            const controlIcon = controlBtn.querySelector('i');
+
+            // Start video automatically
+            video.play().catch(() => {
+                controlIcon.classList.replace('fa-pause', 'fa-play');
+            });
+
+            controlBtn.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                    controlIcon.classList.replace('fa-play', 'fa-pause');
+                } else {
+                    video.pause();
+                    controlIcon.classList.replace('fa-pause', 'fa-play');
+                }
+            });
         });
-    });
-</script>
-</script>
+
+        // Chatbot JavaScript
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatbotToggle = document.getElementById('chatbot-toggle');
+            const chatbotContainer = document.getElementById('chatbot-container');
+            const chatbotClose = document.getElementById('chatbot-close');
+            const chatbotBtn = document.querySelectorAll('.chatbot-btn');
+            const chatbotResponse = document.getElementById('chatbot-response');
+            const chatbotInput = document.getElementById('chatbot-input');
+            const chatbotSend = document.getElementById('chatbot-send');
+
+            // Toggle chatbot visibility
+            chatbotToggle.addEventListener('click', () => {
+                chatbotContainer.style.display = 'block';
+                chatbotToggle.style.display = 'none';
+            });
+
+            chatbotClose.addEventListener('click', () => {
+                chatbotContainer.style.display = 'none';
+                chatbotToggle.style.display = 'block';
+            });
+
+            // Handle button clicks for different info types
+            chatbotBtn.forEach(button => {
+                button.addEventListener('click', () => {
+                    const infoType = button.getAttribute('data-info');
+                    let response = '';
+
+                    if (infoType === 'contact') {
+                        response = `
+                            <h4>Contact Information:</h4>
+                            <p><strong>Email:</strong> <a href="mailto:info@adptai.in">info@adptai.in</a></p>
+                            <p><strong>Website:</strong> <a href="https://adptai.in" target="_blank">adptai.in</a></p>
+                            <p><strong>WhatsApp:</strong> <a href="https://wa.me/+918148347491" target="_blank">+91-8148347491</a></p>
+                        `;
+                    } else if (infoType === 'projects') {
+                        response = `
+                            <h4>Our Projects:</h4>
+                            <ul>
+                                <li><strong>Healthcare:</strong> Cancer Prediction and Brain Tumor Detection.</li>
+                                <li><strong>Education:</strong> Intelligent Tutoring Chatbot and Handwritten Recognition.</li>
+                                <li><strong>Logistics:</strong> Shipping Container OCR and Traffic Monitoring.</li>
+                                <li><strong>Finance:</strong> Fraud Detection System and Trading Suite.</li>
+                                <li><strong>Creative:</strong> Text-to-Image and Image-to-Video.</li>
+                                <li>Explore more <a href="portfolio.html" target="_blank">here</a>.</li>
+                            </ul>
+                        `;
+                    }
+
+                    chatbotResponse.innerHTML = response;
+                    chatbotResponse.scrollTop = chatbotResponse.scrollHeight;
+                });
+            });
+
+            // Handle input and send button
+            chatbotSend.addEventListener('click', () => {
+                const message = chatbotInput.value.trim().toLowerCase();
+                if (message) {
+                    if (message.includes('contact')) {
+                        chatbotBtn[0].click();
+                    } else if (message.includes('project')) {
+                        chatbotBtn[1].click();
+                    } else {
+                        chatbotResponse.innerHTML += `<p>User: ${chatbotInput.value}</p><p>ADPTAI: Please try 'contact' or 'project'!</p>`;
+                        chatbotResponse.scrollTop = chatbotResponse.scrollHeight;
+                    }
+                    chatbotInput.value = '';
+                }
+            });
+
+            chatbotInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') chatbotSend.click();
+            });
+        });
+    </script>
 </body>
 </html>
-
